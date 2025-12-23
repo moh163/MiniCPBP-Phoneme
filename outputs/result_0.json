@@ -1,0 +1,17 @@
+{
+  "status" : "ok",
+  "num_iterations" : 3,
+  "logs" : [ {
+    "sentence" : " The the problem is that the person has not yet been able to find a",
+    "perplexity" : 3.6953524912903495,
+    "tokens" : [ ]
+  }, {
+    "sentence" : " That the statement is true and that the person is indeed a great artist.",
+    "perplexity" : 3.573633647416516,
+    "tokens" : [ ]
+  }, {
+    "sentence" : " We the the the the the the the And so on It like you reading",
+    "perplexity" : 2.5631109134571726,
+    "tokens" : [ ]
+  } ]
+}

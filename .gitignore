@@ -10,3 +10,6 @@ minicp.zip
 userguide/build/
 userguide/userguideenv/
 dependency-reduced-pom.xml
+output/eval_metrics/
+.fake
+stablelm-zephyr-3b/

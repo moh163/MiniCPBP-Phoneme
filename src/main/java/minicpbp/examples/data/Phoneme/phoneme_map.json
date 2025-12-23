@@ -1,0 +1,122 @@
+{
+    "vowels": {
+        "close": {
+            "i": {"id": 1, "description": "close front unrounded"},
+            "y": {"id": 2, "description": "close front rounded"},
+            "ɨ": {"id": 3, "description": "close central unrounded"},
+            "ʉ": {"id": 4, "description": "close central rounded"},
+            "ɯ": {"id": 5, "description": "close back unrounded"},
+            "u": {"id": 6, "description": "close back rounded"}
+        },
+        "near_close": {
+            "ɪ": {"id": 7, "description": "near-close near-front unrounded"},
+            "ʏ": {"id": 8, "description": "near-close near-front rounded"},
+            "ʊ": {"id": 9, "description": "near-close near-back rounded"}
+        },
+        "close_mid": {
+            "e": {"id": 10, "description": "close-mid front unrounded"},
+            "ø": {"id": 11, "description": "close-mid front rounded"},
+            "ɘ": {"id": 12, "description": "close-mid central unrounded"},
+            "ɵ": {"id": 13, "description": "close-mid central rounded"},
+            "ɤ": {"id": 14, "description": "close-mid back unrounded"},
+            "o": {"id": 15, "description": "close-mid back rounded"},
+            "ᵻ": {"id": 78, "description": "close-mid central unrounded (barred i)"}
+        },
+        "mid": {
+            "ə": {"id": 16, "description": "mid central (schwa)"}
+        },
+        "rhotacized": {
+            "ɚ": {"id": 76, "description": "rhotacized mid central vowel"},
+            "ɝ": {"id": 77, "description": "rhotacized open-mid central vowel"}
+        },  
+        "open_mid": {
+            "ɛ": {"id": 17, "description": "open-mid front unrounded"},
+            "œ": {"id": 18, "description": "open-mid front rounded"},
+            "ɜ": {"id": 19, "description": "open-mid central unrounded"},
+            "ɞ": {"id": 20, "description": "open-mid central rounded"},
+            "ʌ": {"id": 21, "description": "open-mid back unrounded"},
+            "ɔ": {"id": 22, "description": "open-mid back rounded"}
+        },
+        "near_open": {
+            "æ": {"id": 23, "description": "near-open front unrounded"},
+            "ɐ": {"id": 24, "description": "near-open central"}
+        },
+        "open": {
+            "a": {"id": 25, "description": "open front unrounded"},
+            "ɶ": {"id": 26, "description": "open front rounded"},
+            "ɑ": {"id": 27, "description": "open back unrounded"},
+            "ɒ": {"id": 28, "description": "open back rounded"}
+        }
+    },
+    "consonants": {
+        "plosives": {
+            "p": {"id": 29, "description": "voiceless bilabial plosive"},
+            "b": {"id": 30, "description": "voiced bilabial plosive"},
+            "t": {"id": 31, "description": "voiceless alveolar plosive"},
+            "d": {"id": 32, "description": "voiced alveolar plosive"},
+            "k": {"id": 33, "description": "voiceless velar plosive"},
+            "ɡ": {"id": 34, "description": "voiced velar plosive"},
+            "ʔ": {"id": 35, "description": "glottal stop"}
+        },
+        "nasals": {
+            "m": {"id": 36, "description": "bilabial nasal"},
+            "n": {"id": 37, "description": "alveolar nasal"},
+            "ŋ": {"id": 38, "description": "velar nasal"},
+            "ɲ": {"id": 39, "description": "palatal nasal"},
+            "ɳ": {"id": 40, "description": "retroflex nasal"}
+        },
+        "fricatives": {
+            "f": {"id": 41, "description": "voiceless labiodental fricative"},
+            "v": {"id": 42, "description": "voiced labiodental fricative"},
+            "θ": {"id": 43, "description": "voiceless dental fricative"},
+            "ð": {"id": 44, "description": "voiced dental fricative"},
+            "s": {"id": 45, "description": "voiceless alveolar fricative"},
+            "z": {"id": 46, "description": "voiced alveolar fricative"},
+            "ʃ": {"id": 47, "description": "voiceless postalveolar fricative"},
+            "ʒ": {"id": 48, "description": "voiced postalveolar fricative"},
+            "h": {"id": 49, "description": "voiceless glottal fricative"},
+            "x": {"id": 50, "description": "voiceless velar fricative"},
+            "ɣ": {"id": 51, "description": "voiced velar fricative"},
+            "ç": {"id": 52, "description": "voiceless palatal fricative"}
+        },
+        "approximants": {
+            "l": {"id": 53, "description": "lateral approximant"},
+            "ɹ": {"id": 54, "description": "alveolar approximant"},
+            "j": {"id": 55, "description": "palatal approximant"},
+            "w": {"id": 56, "description": "labial-velar approximant"},
+            "ɾ": {"id": 57, "description": "alveolar tap/flap"}
+        },
+        "affricates_and_double": {
+            "ʧ": {"id": 58, "description": "voiceless postalveolar affricate"},
+            "ʤ": {"id": 59, "description": "voiced postalveolar affricate"},
+            "ts": {"id": 60, "description": "voiceless alveolar affricate"},
+            "dz": {"id": 61, "description": "voiced alveolar affricate"}
+        }
+    },
+    "modifiers": {
+        "stress": {
+            "ˈ": {"id": 62, "description": "primary stress"},
+            "ˌ": {"id": 63, "description": "secondary stress"}
+        },
+        "length": {
+            "ː": {"id": 64, "description": "length mark"},
+            "ˑ": {"id": 65, "description": "half-length mark"}
+        },
+        "separators": {
+            ".": {"id": 66, "description": "syllable break"},
+            " ": {"id": 67, "description": "word break"},
+            "|": {"id": 68, "description": "minor group"},
+            "||": {"id": 69, "description": "major group"},
+            "‿": {"id": 70, "description": "linking mark"},
+            "͡": {"id": 71, "description": "tie bar above"},
+            "͜": {"id": 72, "description": "tie bar below"}
+        }
+    },
+    "diacritics_standalone": {
+        "diactric":{
+            "̃": {"id": 73, "description": "nasalization tilde"},
+            "˞": {"id": 74, "description": "rhoticity hook"},
+            "̩": {"id": 75, "description": "syllabic marker"}
+        }
+    }
+}
