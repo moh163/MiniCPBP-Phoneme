@@ -1,0 +1,13 @@
+{
+  "status" : "ok",
+  "num_iterations" : 2,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nTu es un assistant orthophoniste. Tu génères UNIQUEMENT ce qui est demandé, sans introduction, sans explication, sans conclusion et en français.<|im_end|>\n<|im_start|>user\nListe UNIQUEMENT des mots en rapport avec la FERME. Aucune introduction. Aucun mot hors sujet.<|im_end|>\n<|im_start|>assistant\n bo ch from herne",
+    "perplexity" : 6.659146836898902,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|im_start|>system\nTu es un assistant orthophoniste. Tu génères UNIQUEMENT ce qui est demandé, sans introduction, sans explication, sans conclusion et en français.<|im_end|>\n<|im_start|>user\nListe UNIQUEMENT des mots en rapport avec la FERME. Aucune introduction. Aucun mot hors sujet.<|im_end|>\n<|im_start|>assistant\n cow sheep barn pig chicken",
+    "perplexity" : 55.619924174559905,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  } ]
+}

@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 2.5,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Fool Hard Turtleape ERROR",
+    "tokens" : [ 39, 1062, 11366, 308, 49718, 2259, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Hard", "null,  T", "null, urtle, ape", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool Hard Turtleailed ERROR",
+    "tokens" : [ 39, 1062, 11366, 308, 49718, 7193, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Hard", "null,  T", "null, urtle, ailed", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-26T20:41:01.716352700"
+}

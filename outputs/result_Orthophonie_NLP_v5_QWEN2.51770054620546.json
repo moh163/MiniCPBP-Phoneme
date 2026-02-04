@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " lune coque sol cour voltige sol ERROR",
+    "tokens" : [ 2886, 1062, 591, 2048, 2081, 16393, 7256, 2048, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  co", "null, que,  sol", "null,  cour", "null,  volt", "null, ige,  sol", null, null, null, null ]
+  }, {
+    "sentence" : "lune sol grange galaxie chiffre cour Rocher ion bord plan.",
+    "tokens" : [ 2886, 2048, 1081, 844, 15369, 706, 645, 82964, 265, 2081, 35869, 261, 27672, 37902, 3119, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  sol", "null,  gr", "null, ange,  gal", "null, ax, ie,  chiff", "null, re,  cour", "null,  Roch", "null, er,  ion", "null,  bord", "null,  plan" ]
+  } ],
+  "date" : "2026-02-02T12:50:20.531675400"
+}

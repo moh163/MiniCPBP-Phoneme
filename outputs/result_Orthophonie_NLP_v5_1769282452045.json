@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Foolamous ERROR",
+    "tokens" : [ 39, 1062, 14919, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, amous", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool Hard T ERROR",
+    "tokens" : [ 39, 1062, 11366, 308, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Hard", "null,  T", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool ERROR",
+    "tokens" : [ 39, 1062, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-24T14:20:52.041004200"
+}

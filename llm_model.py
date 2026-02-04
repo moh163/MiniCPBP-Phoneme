@@ -12,25 +12,26 @@ def get_predictions(sentence):
 
 
 #model_name = "stabilityai/stablelm-zephyr-3b"
-model_name ="roberta-base"
+#model_name ="roberta-base"
+model_name = "mistralai/Mistral-7B-Instruct-v0.3"
 device='cuda' if torch.cuda.is_available() else 'cpu'
-#model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", load_in_8bit=True)
-model = AutoModelForMaskedLM.from_pretrained(model_name).to(device)
+model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", load_in_8bit=True)
+#model = AutoModelForMaskedLM.from_pretrained(model_name).to(device)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 #SPECIAL_SPACE_CHAR_ASCII_CODE = 9601
 
 
 # Get the model predictions for the sentence.
-#predictions = get_predictions("<s>Hello")
-inputs = tokenizer("Hello <mask>!", return_tensors="pt").to(device)
-with torch.no_grad():
-        outputs = model(**inputs)
-        predictions = outputs.logits
+predictions = get_predictions("<s>Hello")
+#inputs = tokenizer("Hello <mask>!", return_tensors="pt").to(device)
+# with torch.no_grad():
+#         outputs = model(**inputs)
+#         predictions = outputs.logits
 
-#next_token_candidates_tensor = predictions[0, -1, :]
-mask_positions = (inputs.input_ids == tokenizer.mask_token_id)[0].nonzero(as_tuple=True)[0].tolist()[0]
-next_token_candidates_tensor = predictions[0, mask_positions, :]
+next_token_candidates_tensor = predictions[0, -1, :]
+# mask_positions = (inputs.input_ids == tokenizer.mask_token_id)[0].nonzero(as_tuple=True)[0].tolist()[0]
+# next_token_candidates_tensor = predictions[0, mask_positions, :]
 
 print(len(next_token_candidates_tensor))
 

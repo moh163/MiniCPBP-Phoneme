@@ -1,0 +1,9 @@
+{
+  "status" : "ok",
+  "num_iterations" : 1,
+  "logs" : [ {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a text that tells a story in 3 phrases appropriate for children. Include only the text without any introduction or conclusion. Make sure the text is diverse and engaging.</s>\n<|assistant|>\n One day Tim a shy turtle loved to climb hills he make new friends but had a fear of dark he wished to explore more far  Tim and friends one day went on an",
+    "perplexity" : 2.493916147557645,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  } ]
+}

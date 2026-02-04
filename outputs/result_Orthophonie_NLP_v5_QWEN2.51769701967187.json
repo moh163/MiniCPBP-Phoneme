@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "moon stars sun planet rocket space station star ship black hole.",
+    "tokens" : [ 9009, 9759, 7015, 11580, 24306, 3550, 8056, 6774, 8284, 3691, 14178, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  stars", "null,  sun", "null,  planet", "null,  rocket", "null,  space", "null,  station", "null,  star", "null,  ship", "null,  black", "null,  hole" ]
+  }, {
+    "sentence" : "moon star sun planet earth space ship black hole cloud universe.",
+    "tokens" : [ 9009, 6774, 7015, 11580, 9393, 3550, 8284, 3691, 14178, 9437, 15494, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  star", "null,  sun", "null,  planet", "null,  earth", "null,  space", "null,  ship", "null,  black", "null,  hole", "null,  cloud", "null,  universe" ]
+  } ],
+  "date" : "2026-01-29T10:52:47.183626900"
+}

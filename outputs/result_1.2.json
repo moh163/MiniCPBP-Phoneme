@@ -1,0 +1,35 @@
+{
+  "status" : "ok",
+  "num_iterations" : 6,
+  "logs" : [ {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.</s>\n<|assistant|>\n
+    That night we saw lots of pretty stars in the sky and",
+    "perplexity" : 1.75889387963382,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.</s>\n<|assistant|>\n
+    He can see the birds flying high in the sky with mom",
+    "perplexity" : 6.577493807558275,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.</s>\n<|assistant|>\n
+    There are many different types of birds that live in pairs popping",
+    "perplexity" : 13.1515069077278,
+    "details" : "Phoneme: [p] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.</s>\n<|assistant|>\n
+    This bright sun rises every morning putting away sleepy pa as parents",
+    "perplexity" : 21.690780624486244,
+    "details" : "Phoneme: [p] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.</s>\n<|assistant|>\n
+    There are many types of birds that live in park bump probably",
+    "perplexity" : 95.37448564439012,
+    "details" : "Phoneme: [b] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.</s>\n<|assistant|>\n
+    The big beautiful butterfly spun gentle purple wings becoming happier trying new",
+    "perplexity" : 50.45868289305278,
+    "details" : "Phoneme: [b] min:4 max:5"
+  } ]
+}

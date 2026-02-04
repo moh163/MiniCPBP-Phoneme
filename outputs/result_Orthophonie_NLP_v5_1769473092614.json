@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Fool moon Island Sleepsadder ERROR",
+    "tokens" : [ 39, 1062, 12334, 8451, 322, 282, 2265, 14630, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  moon", "null,  Island", "null,  S", "null, le, eps, adder", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool moon Island cupped lovely mirrored ocean rains wax wrote Yes quick red wonders juice glass mine Sittingadder ERROR",
+    "tokens" : [ 39, 1062, 12334, 8451, 260, 1135, 264, 13491, 6385, 45284, 12927, 42229, 22612, 4159, 6279, 3158, 2502, 28770, 14709, 5253, 7477, 322, 2835, 14630, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  moon", "null,  Island", "null,  c", "null, upp, ed,  lovely", "null,  mir", "null, rored,  ocean", "null,  rains", "null,  wax", "null,  wrote", "null,  Yes", "null,  quick", "null,  red", "null,  wonders", "null,  juice", "null,  glass", "null,  mine", "null,  S", "null, itting, adder", null, null ]
+  } ],
+  "date" : "2026-01-26T19:18:12.595640"
+}

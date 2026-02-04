@@ -1,0 +1,6 @@
+{
+  "status" : "error",
+  "error_message" : "java.net.ConnectException",
+  "exception" : "java.util.concurrent.CompletionException: java.net.ConnectException",
+  "date" : "2026-01-26T17:39:32.589007300"
+}

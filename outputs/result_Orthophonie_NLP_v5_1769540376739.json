@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : "Moon rocks Crash land Planet earth Rockets Spaces suits Countries Planets Sun Light Spaces castles Leaps Or journey Flying Safer Pass.",
+    "tokens" : [ 3508, 16419, 7306, 1225, 2659, 29719, 6149, 9384, 1507, 2101, 1951, 19519, 8240, 2246, 9224, 1507, 4146, 10315, 2101, 1951, 5248, 868, 2070, 1825, 2207, 9455, 42027, 10388, 1592, 11271, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  rocks", "null,  Cr", "null, ash,  land", "null,  Planet", "null,  earth", "null,  Rock", "null, ets,  Sp", "null, aces,  suits", "null,  Count", "null, ries,  Plan", "null, ets,  Sun", "null,  Light", "null,  Sp", "null, aces,  cast", "null, les,  Le", "null, aps,  Or", "null,  journey", "null,  Flying", "null,  Sa", "null, fer,  Pass" ]
+  }, {
+    "sentence" : "Moon rocks Leaving Earth Sent crashing Skies full of clouds Planets Or hit by Backward Floating Light years Moved at an.",
+    "tokens" : [ 3508, 16419, 2070, 3292, 7565, 20580, 34869, 8229, 447, 2120, 273, 16173, 9224, 1507, 2207, 4352, 407, 8247, 1034, 46311, 839, 10315, 1107, 353, 3149, 387, 271, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  rocks", "null,  Le", "null, aving,  Earth", "null,  Sent", "null,  crashing", "null,  Sk", "null, ies,  full", "null,  of", "null,  clouds", "null,  Plan", "null, ets,  Or", "null,  hit", "null,  by", "null,  Back", "null, ward,  Flo", "null, ating,  Light", "null,  years", "null,  M", "null, oved,  at", "null,  an" ]
+  } ],
+  "date" : "2026-01-27T13:59:36.733905200"
+}

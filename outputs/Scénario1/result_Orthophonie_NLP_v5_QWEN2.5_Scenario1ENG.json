@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "foolish fooling using enough lousy losing buying daisy daddy laughing dirty candy griffin finish funny usual fancy nephew suitcase finger.",
+    "tokens" : [ 337, 812, 23977, 287, 1667, 3322, 326, 93523, 13188, 11833, 294, 49056, 56542, 31581, 18595, 31556, 1081, 83864, 6248, 15173, 13475, 26457, 62804, 87849, 14317, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, "null, ing,  using", "null,  enough", "null,  l", "null, ousy,  losing", "null,  buying", "null,  d", "null, aisy,  daddy", "null,  laughing", "null,  dirty", "null,  candy", "null,  gr", "null, iffin,  finish", "null,  funny", "null,  usual", "null,  fancy", "null,  nephew", "null,  suitcase", "null,  finger" ]
+  }, {
+    "sentence" : "foolish fooling cooking quickly picking funny holly fella lily skinny buddy fancy fairy butter perfume duty nephew usual finger fifteen.",
+    "tokens" : [ 337, 812, 23977, 287, 17233, 6157, 21132, 15173, 305, 8618, 282, 6842, 326, 1541, 47677, 36672, 26457, 44486, 14100, 66343, 14189, 62804, 13475, 14317, 36655, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, "null, ing,  cooking", "null,  quickly", "null,  picking", "null,  funny", "null,  h", "null, olly,  f", "null, ella,  l", "null, ily,  skinny", "null,  buddy", "null,  fancy", "null,  fairy", "null,  butter", "null,  perfume", "null,  duty", "null,  nephew", "null,  usual", "null,  finger", "null,  fifteen" ]
+  } ],
+  "date" : "2026-02-03T20:35:48.387258300"
+}

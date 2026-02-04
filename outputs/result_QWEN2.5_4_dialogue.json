@@ -1,0 +1,9 @@
+{
+  "status" : "ok",
+  "num_iterations" : 1,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a text that contains dialogues between different persons that are appropriate to children. Include only the text without any introduction or conclusion.<|im_end|>\n<|im_start|>assistant\n Mom Hello sweet did what you do today Son I went to the park and played on the swings Mom Did you have fun Son Yes I did Mom Did you see any animals there",
+    "perplexity" : 1.7843314778677684,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  } ]
+}

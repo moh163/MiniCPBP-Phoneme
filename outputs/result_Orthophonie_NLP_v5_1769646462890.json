@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : "moon rock star combs son planets spaces suit dangers lucks sa.",
+    "tokens" : [ 3508, 5561, 4177, 389, 1768, 3347, 20581, 8470, 4176, 25926, 298, 9984, 618, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  rock", "null,  star", "null,  com", "null, bs,  son", "null,  planets", "null,  spaces", "null,  suit", "null,  dangers", "null,  l", "null, ucks,  sa" ]
+  }, {
+    "sentence" : "moon rocks planets combs stars pencils nose blow outs space suits.",
+    "tokens" : [ 3508, 16419, 20581, 389, 1768, 6114, 268, 2083, 3683, 11480, 8230, 20823, 2317, 19519, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  rocks", "null,  planets", "null,  com", "null, bs,  stars", "null,  p", "null, enc, ils,  nose", "null,  blow", "null,  outs", "null,  space", "null,  suits" ]
+  } ],
+  "date" : "2026-01-28T19:27:42.886918200"
+}

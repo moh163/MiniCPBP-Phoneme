@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "lune capteur sol bord campagne vue grandeurs accélérant infériorité sup.",
+    "tokens" : [ 2886, 2062, 665, 324, 2048, 37902, 3113, 23870, 47134, 24604, 1723, 1029, 18503, 13763, 517, 4132, 963, 3254, 12815, 1026, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  cap", "null, te, ur,  sol", "null,  bord", "null,  camp", "null, agne,  vue", "null,  grande", "null, urs,  acc", "null, Ã©l, Ã©r, ant,  inf", "null, Ã©, rior, itÃ©,  sup" ]
+  }, {
+    "sentence" : "lune coïncidence territoire galaxie vue vélo reliant panneaux parenthèses queue.",
+    "tokens" : [ 2886, 1062, 37572, 1016, 7087, 7170, 6357, 554, 15369, 706, 645, 47134, 44065, 385, 88127, 7215, 811, 11981, 37940, 128213, 9275, 7177, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  co", "null, Ã¯, nc, idence,  terr", "null, ito, ire,  gal", "null, ax, ie,  vue", "null,  vÃ©", "null, lo,  reliant", "null,  pan", "null, ne, aux,  paren", "null, thÃ¨, ses,  queue" ]
+  } ],
+  "date" : "2026-02-02T16:00:50.172271300"
+}

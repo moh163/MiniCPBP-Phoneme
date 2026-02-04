@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : "Fool Verbs Spaces Magic Chocolate Fish Gardens Sunset Leaves Blocks Crash Gardens Warm Chocolate Guys Talk Leaves Apples Book Colors Ser.",
+    "tokens" : [ 1062, 7188, 1768, 2101, 1951, 21577, 41992, 23645, 33892, 4146, 1178, 2070, 3465, 2071, 4121, 7306, 1225, 33892, 47127, 41992, 3262, 656, 25664, 2070, 3465, 2051, 868, 7225, 2065, 641, 4165, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Ver", "null, bs,  Sp", "null, aces,  Magic", "null,  Chocolate", "null,  Fish", "null,  Gardens", "null,  Sun", "null, set,  Le", "null, aves,  Bl", "null, ocks,  Cr", "null, ash,  Gardens", "null,  Warm", "null,  Chocolate", "null,  Gu", "null, ys,  Talk", "null,  Le", "null, aves,  App", "null, les,  Book", "null,  Col", "null, ors,  Ser" ]
+  }, {
+    "sentence" : "Fool owl Pillow Talk Under Cover Sun Make Love tea Leather jacket Apple Pie Sleepy Head Baby foot Chocolate Monkey Bl.",
+    "tokens" : [ 1062, 18454, 77, 48213, 319, 25664, 6166, 20690, 4146, 10338, 10540, 10331, 2070, 1226, 18553, 8217, 27695, 26735, 90, 12318, 25707, 3174, 41992, 4200, 2364, 2071, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  ow", "null, l,  Pill", "null, ow,  Talk", "null,  Under", "null,  Cover", "null,  Sun", "null,  Make", "null,  Love", "null,  tea", "null,  Le", "null, ather,  jacket", "null,  Apple", "null,  Pie", "null,  Sleep", "null, y,  Head", "null,  Baby", "null,  foot", "null,  Chocolate", "null,  Mon", "null, key,  Bl" ]
+  } ],
+  "date" : "2026-01-26T19:48:35.894985400"
+}

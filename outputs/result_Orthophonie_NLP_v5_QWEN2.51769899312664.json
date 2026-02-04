@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "lune coque galaxie vue sol martien cabane cour scientifique plan.",
+    "tokens" : [ 2886, 1062, 591, 15369, 706, 645, 47134, 2048, 48195, 3591, 21516, 2145, 2081, 7182, 51660, 3119, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  co", "null, que,  gal", "null, ax, ie,  vue", "null,  sol", "null,  mart", "null, ien,  cab", "null, ane,  cour", "null,  scient", "null, ifique,  plan" ]
+  }, {
+    "sentence" : " lune vÃ© ERROR",
+    "tokens" : [ 75, 2886, 348, 18791, 20043, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  vÃ©", null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-31T17:41:52.652963100"
+}

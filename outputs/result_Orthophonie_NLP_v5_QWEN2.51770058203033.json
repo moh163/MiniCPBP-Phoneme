@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "lune bord sud sol courante altitude galaxie planètes territoire bord.",
+    "tokens" : [ 2886, 37902, 30737, 2048, 2081, 4942, 35858, 15369, 706, 645, 3119, 4458, 2338, 7170, 6357, 554, 37902, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  bord", "null,  sud", "null,  sol", "null,  cour", "null, ante,  altitude", "null,  gal", "null, ax, ie,  plan", "null, Ã¨, tes,  terr", "null, ito, ire,  bord" ]
+  }, {
+    "sentence" : "lune courant galaxie bord coque campagne cascade canal planète observ.",
+    "tokens" : [ 2886, 2081, 517, 15369, 706, 645, 37902, 1062, 591, 3113, 23870, 42018, 38921, 3119, 65422, 9282, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  cour", "null, ant,  gal", "null, ax, ie,  bord", "null,  co", "null, que,  camp", "null, agne,  cascade", "null,  canal", "null,  plan", "null, Ã¨te,  observ" ]
+  } ],
+  "date" : "2026-02-02T13:50:03.022733600"
+}

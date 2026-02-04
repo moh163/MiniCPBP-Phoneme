@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "lune sol boules coque galaxie coeur campement pan général liberté.",
+    "tokens" : [ 2886, 2048, 29770, 642, 1062, 591, 15369, 706, 645, 1062, 12559, 3113, 1114, 7215, 88075, 142341, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  sol", "null,  bou", "null, les,  co", "null, que,  gal", "null, ax, ie,  co", "null, eur,  camp", "null, ement,  pan", "null,  gÃ©nÃ©ral", "null,  libertÃ©" ]
+  }, {
+    "sentence" : "lune galaxie sol cour Rocher solaire coque bruine territoire plan.",
+    "tokens" : [ 2886, 15369, 706, 645, 2048, 2081, 35869, 261, 2048, 11998, 1062, 591, 42000, 482, 7170, 6357, 554, 3119, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  gal", "null, ax, ie,  sol", "null,  cour", "null,  Roch", "null, er,  sol", "null, aire,  co", "null, que,  bru", "null, ine,  terr", "null, ito, ire,  plan" ]
+  } ],
+  "date" : "2026-02-02T13:12:59.144993800"
+}

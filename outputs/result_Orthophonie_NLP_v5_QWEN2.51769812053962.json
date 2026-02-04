@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "lune coque sol plan sol sols une cabine coque inf.",
+    "tokens" : [ 2886, 1062, 591, 2048, 3119, 2048, 2048, 82, 6185, 21516, 482, 1062, 591, 4132, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  co", "null, que,  sol", "null,  plan", "null,  sol", "null,  sol", "null, s,  une", "null,  cab", "null, ine,  co", "null, que,  inf" ]
+  }, {
+    "sentence" : "lune bord corps sud territoire coeur plan sol visage chiff.",
+    "tokens" : [ 2886, 37902, 33822, 30737, 7170, 6357, 554, 1062, 12559, 3119, 2048, 2098, 424, 82964, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  bord", "null,  corps", "null,  sud", "null,  terr", "null, ito, ire,  co", "null, eur,  plan", "null,  sol", "null,  vis", "null, age,  chiff" ]
+  } ],
+  "date" : "2026-01-30T17:27:33.960110300"
+}

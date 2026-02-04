@@ -1,6 +1,7 @@
 import os
 
 from sympy import im
+from pathlib import Path
 print("Importing server...")
 os.environ['PYTHONVERBOSE'] = '1'
 try:
@@ -10,7 +11,6 @@ try:
     sys.stdout.reconfigure(line_buffering=True)
     print("Configuring stderr...")
     sys.stderr.reconfigure(line_buffering=True)
-    
     print("Importing time...")
     import time
     print("Importing json...")
@@ -48,6 +48,7 @@ except Exception as e:
 
 parser = argparse.ArgumentParser(description="Flask server for token prediction")
 parser.add_argument('--port', type=int, default=5000, help='Port to run the server on')
+parser.add_argument('--language',type=str, default='en-us', help='Language for the phonemizer (either en-us or fr-fr)')
 args = parser.parse_args()
 app = Flask(__name__)
 app.json.ensure_ascii = False
@@ -59,7 +60,7 @@ mask_string = "<mask>"
 def initialize_phonemizer():
     try:
         # Configuration du backend espeak
-        backend = EspeakBackend(language='en-us', 
+        backend = EspeakBackend(language=args.language, 
                               preserve_punctuation=True,
                               with_stress=True)
         separator = Separator(phone=' ', syllable='|', word=' || ')
@@ -71,8 +72,7 @@ def initialize_phonemizer():
 def text_to_phonemes(text, separator):
     try:
         # Convertir le texte en phonèmes
-        phonemes = phonemize(text,
-                           backend="espeak",
+        phonemes = phonemizer_backend.phonemize(text,
                            separator=separator,
                            strip=True)
         return phonemes
@@ -87,12 +87,63 @@ def get_predictions(sentence):
         outputs = model(inputs)
         predictions = outputs[0]
     return predictions
-def get_next_word_probabilities(sentence):
-    NEW_WORD=False
+
+def get_next_token(sentence, temperature=1):
+    predictions = get_predictions(sentence)
+    next_token_candidates_tensor = predictions[0, -1, :]
+
+    # Appliquer la température. 
+    # T < 1.0 = plus confiant/répétitif
+    # T > 1.0 = plus créatif/aléatoire
+    print("Temperature set to: ", temperature, flush=True)
+    next_token_candidates_tensor = next_token_candidates_tensor / temperature
+
+    all_candidates_probabilities = torch.nn.functional.softmax(
+        next_token_candidates_tensor, dim=-1).tolist()
     
+    # Créer liste de (idx, prob) et trier par prob décroissante
+    token_probs = [(idx, prob) for idx, prob in enumerate(all_candidates_probabilities)]
+    token_probs.sort(key=lambda x: x[1], reverse=True)
+    
+    # Chercher le premier token valide (sans \n, \r)
+    top_token = None
+    for idx, prob in token_probs:
+        decoded = tokenizer.decode([idx], skip_special_tokens=False)
+        if "\n" not in decoded and "\r" not in decoded:
+            top_token = decoded
+            break
+    
+    if top_token is None:
+        top_token = " "  # Fallback si aucun token valide trouvé
+
+    print("DEBUG top_token:", repr(top_token), flush=True)
+    print("DEBUG sentence:", repr(sentence), flush=True)
+    # Filtrer probs finales pour retourner seulement tokens valides
+    filtered_probs = [
+        [idx, prob] for idx, prob in enumerate(all_candidates_probabilities) #TODO  verifier si il vaudrais mieux pas prendre les anciennes proba
+        if "\n" not in tokenizer.decode([idx], skip_special_tokens=True) 
+        and "\r" not in tokenizer.decode([idx], skip_special_tokens=True)
+    ]
+    
+    return {
+        "prob": filtered_probs,
+        "sentence": sentence
+    }
+
+def get_next_word_probabilities(sentence, temperature=1):
+    NEW_WORD=False
+    wordStarted=False
+    old_all_candidate_probabilities = None
     while not NEW_WORD:
         predictions = get_predictions(sentence)
         next_token_candidates_tensor = predictions[0, -1, :]
+
+        # Appliquer la température. 
+        # T < 1.0 = plus confiant/répétitif
+        # T > 1.0 = plus créatif/aléatoire
+        print("Temperature set to: ", temperature, flush=True)
+        next_token_candidates_tensor = next_token_candidates_tensor / temperature
+
         all_candidates_probabilities = torch.nn.functional.softmax(
             next_token_candidates_tensor, dim=-1).tolist()
         
@@ -112,26 +163,53 @@ def get_next_word_probabilities(sentence):
             top_token = " "  # Fallback si aucun token valide trouvé
 
         print("DEBUG top_token:", repr(top_token), flush=True)        
-        if top_token.startswith(" ") or top_token == ".":
-            NEW_WORD = True
-            if phonemizer_backend:
-                phonemes = text_to_phonemes(sentence, phoneme_separator)
+        if top_token.startswith(" ") or top_token.startswith("Ġ") or top_token == ".":
+            if wordStarted:
+                NEW_WORD = True
             else:
-                phonemes = None
+                wordStarted=True
+                old_all_candidate_probabilities = all_candidates_probabilities
         else:
             sentence += top_token
     print("DEBUG sentence:", repr(sentence), flush=True)
     # Filtrer probs finales pour retourner seulement tokens valides
     filtered_probs = [
-        [idx, prob] for idx, prob in enumerate(all_candidates_probabilities)
-        if "\n" not in tokenizer.decode([idx], skip_special_tokens=False) 
-        and "\r" not in tokenizer.decode([idx], skip_special_tokens=False)
+        [idx, prob] for idx, prob in enumerate(all_candidates_probabilities) #TODO  verifier si il vaudrais mieux pas prendre les anciennes proba
+        if "\n" not in tokenizer.decode([idx], skip_special_tokens=True) 
+        and "\r" not in tokenizer.decode([idx], skip_special_tokens=True)
     ]
     
     return {
         "prob": filtered_probs,
+        "sentence": sentence
+    }
+
+def get_next_word_probabilitiesV5(sentence):
+    
+    # Get the model predictions for the sentence.
+    predictions = get_predictions(sentence)
+    
+    # Get the next token candidates.
+    next_token_candidates_tensor = predictions[0, -1, :]
+    
+    # Get the token probabilities for all candidates.
+    all_candidates_probabilities = torch.nn.functional.softmax(
+        next_token_candidates_tensor, dim=-1).tolist()
+    token_probs = [(idx, prob) for idx, prob in enumerate(all_candidates_probabilities)]
+    token_probs.sort(key=lambda x: x[1], reverse=True)
+    top_token = None
+    for idx, prob in token_probs:
+        decoded = tokenizer.decode([idx], skip_special_tokens=False)
+        if "\n" not in decoded and "\r" not in decoded:
+            top_token = decoded
+            break
+        
+    print("DEBUG top_token:", repr(top_token), flush=True)
+ 
+    return {
+        "prob": list(zip(range(0, len(next_token_candidates_tensor)), all_candidates_probabilities)),
         "sentence": sentence,
-        "phonemes": phonemes
+        "tokenized_last_word": tokenizer.convert_tokens_to_ids(tokenizer.tokenize(" " + sentence.split()[-1]))
     }
 @app.route('/decode_ids', methods=['POST'])
 def decode_ids():
@@ -140,6 +218,16 @@ def decode_ids():
         ids = data.get("ids", [])
         tokens = [tokenizer.decode([int(i)], skip_special_tokens=False) for i in ids]
         return {"ids": ids, "tokens": tokens}, 200
+    except Exception as e:
+        return {"error": str(e)}, 500
+    
+@app.route('/decode_id', methods=['POST'])
+def decode_id():
+    try:
+        data = request.get_json(force=True)
+        id = int(data.get("id", []))
+        token = [tokenizer.decode([id])]
+        return {"token": token}, 200
     except Exception as e:
         return {"error": str(e)}, 500
 
@@ -169,6 +257,53 @@ def phonemize_ids():
                 results.append({"id": int(token_id), "token": tok, "phonemes": phon})
             except Exception as e:
                 return {"id": int(token_id), "token": tok, "phonemes": phon, "error": str(e)}, 400
+        
+        return {"results": results}, 200
+    except Exception as e:
+        import traceback, io
+        buf = io.StringIO()
+        traceback.print_exc(file=buf)
+        return {"error": str(e), "trace": buf.getvalue()}, 500
+    
+
+       
+
+    
+@app.route('/batch_phonemize', methods=['POST'])
+def batchPhonemization():
+    """
+    Phonemise une liste de mot en batch.
+    Entrée: {"position": [int, ...]}
+    Sortie: {"results": [{"id": int, "token": str, "phonemes": str}, ...]}
+    """
+    try:
+        data = request.get_json(force=True)
+        positions = data.get("position", [])
+        if not isinstance(positions, list):
+            return {"error": "positions must be a list"}, 400
+        results = []
+        
+        corpus_domain_path = Path(f"./src/main/java/minicpbp/examples/data/LLM/QWEN2.5/corpus_tokenized_words.json")
+        with open(corpus_domain_path, "r") as f:
+            corpus_domain = json.load(f)
+        for token_position in positions:
+            try:
+                if token_position < len(corpus_domain):
+                    token_ids = corpus_domain[token_position]  # e.g., [498]
+                    # Decode token IDs to get the actual word
+                    tok = tokenizer.decode(token_ids, skip_special_tokens=False)
+                else:
+                    return {"error": f"Position {token_position} out of bounds"}, 400
+                
+                phon = None
+                if phonemizer_backend is not None:
+                    phon = text_to_phonemes(tok, phoneme_separator)
+                    if "?" in phon:
+                        print("word is: "+tok+" phonemes are: "+phon, flush=True)
+
+                results.append({"id": int(token_position), "token": tok, "phonemes": phon})
+            except Exception as e:
+                return {"id": int(token_position), "token": "", "phonemes": None, "error": str(e)}, 400
         
         return {"results": results}, 200
     except Exception as e:
@@ -219,7 +354,10 @@ try:
     print("Setting model_name...")
     #model_name = "meta-llama/Llama-3.2-3B"
     #model_name = "../Ctrl-G/ctrlg/gpt2-large_common-gen"
-    model_name ="stabilityai/stablelm-zephyr-3b"
+    #model_name ="stabilityai/stablelm-zephyr-3b"
+    model_name = "Qwen/Qwen2.5-3B-Instruct"
+    #model_name = "mistralai/Mistral-7B-Instruct-v0.3"
+
 
     print("Detecting device...")
     device='cuda' if torch.cuda.is_available() else 'cpu'
@@ -234,11 +372,11 @@ try:
     print("Loading model with local_files_only=True...")
     model = AutoModelForCausalLM.from_pretrained(model_name, local_files_only=True).to(device)
 
-    print("Loading MLM model...")
-    mlm_model_name = "roberta-base"
-    mlm_model = AutoModelForMaskedLM.from_pretrained(mlm_model_name).to(device)
-    mlm_tokenizer = AutoTokenizer.from_pretrained(mlm_model_name)
-    print("MLM model ready")
+    # print("Loading MLM model...")
+    # mlm_model_name = "roberta-base"
+    # mlm_model = AutoModelForMaskedLM.from_pretrained(mlm_model_name).to(device)
+    # mlm_tokenizer = AutoTokenizer.from_pretrained(mlm_model_name)
+    # print("MLM model ready")
     
     print("Loading tokenizer with local_files_only=True...")
     tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=True)
@@ -246,50 +384,50 @@ try:
     print("Initializing phonemizer...")
     phonemizer_backend, phoneme_separator = initialize_phonemizer()
 
-    print("Getting next_token_candidates_tensor...")
-    next_token_candidates_tensor = get_predictions("<s>Hello")[0, -1, :]
+    # print("Getting next_token_candidates_tensor...")
+    # next_token_candidates_tensor = get_predictions("Hello")[0, -1, :]
 
-    print("Printing length of next_token_candidates_tensor...")
-    print(len(next_token_candidates_tensor))
+    # print("Printing length of next_token_candidates_tensor...")
+    # print(len(next_token_candidates_tensor))
 
-    print("Printing current time...")
-    print(time.time())
+    # print("Printing current time...")
+    # print(time.time())
 
-    print("Generating all_tokens...")
-    all_tokens = [tokenizer.decode([idx], skip_special_tokens=False) for idx in range(0, len(next_token_candidates_tensor)+1)]
+    # print("Generating all_tokens...")
+    # all_tokens = [tokenizer.decode([idx], skip_special_tokens=False) for idx in range(0, len(next_token_candidates_tensor)+1)]
 
-    print("Printing current time...")
-    print(time.time())
+    # print("Printing current time...")
+    # print(time.time())
 
-    print("Generating all_lemmes_nouns...")
-    all_lemmes_nouns = [WordNetLemmatizer().lemmatize(token.strip().lower()) for token in all_tokens]
+    # print("Generating all_lemmes_nouns...")
+    # all_lemmes_nouns = [WordNetLemmatizer().lemmatize(token.strip().lower()) for token in all_tokens]
 
-    print("Printing current time...")
-    print(time.time())
+    # print("Printing current time...")
+    # print(time.time())
 
-    print("Generating all_lemmes_verbs...")
-    all_lemmes_verbs = [WordNetLemmatizer().lemmatize(token.strip().lower(),"v") for token in all_tokens]
+    # print("Generating all_lemmes_verbs...")
+    # all_lemmes_verbs = [WordNetLemmatizer().lemmatize(token.strip().lower(),"v") for token in all_tokens]
 
-    print("Printing current time...")
-    print(time.time())
+    # print("Printing current time...")
+    # print(time.time())
 
-    print("Generating all_lemmes_adjectives...")
-    all_lemmes_adjectives = [WordNetLemmatizer().lemmatize(token.strip().lower(),"a") for token in all_tokens]
+    # print("Generating all_lemmes_adjectives...")
+    # all_lemmes_adjectives = [WordNetLemmatizer().lemmatize(token.strip().lower(),"a") for token in all_tokens]
 
-    print("Printing current time...")
-    print(time.time())
+    # print("Printing current time...")
+    # print(time.time())
 
-    print("Generating all_lemmes_adverbs...")
-    all_lemmes_adverbs = [WordNetLemmatizer().lemmatize(token.strip().lower(),"r") for token in all_tokens]
+    # print("Generating all_lemmes_adverbs...")
+    # all_lemmes_adverbs = [WordNetLemmatizer().lemmatize(token.strip().lower(),"r") for token in all_tokens]
 
-    print("Printing current time...")
-    print(time.time())
+    # print("Printing current time...")
+    # print(time.time())
 
-    print("Generating all_lemmes_satellites...")
-    all_lemmes_satellites = [WordNetLemmatizer().lemmatize(token.strip().lower(),"s") for token in all_tokens]
+    # print("Generating all_lemmes_satellites...")
+    # all_lemmes_satellites = [WordNetLemmatizer().lemmatize(token.strip().lower(),"s") for token in all_tokens]
 
-    print("Printing current time...")
-    print(time.time())
+    # print("Printing current time...")
+    # print(time.time())
 
     print("Ready")
 except Exception as e:
@@ -301,36 +439,36 @@ except Exception as e:
 
 @app.route('/tokenize', methods=['POST'])
 def get_tokens():
-    tokens = tokenizer.convert_tokens_to_ids(tokenizer.tokenize(request.data.decode()[1:]))
-    soft_constaint_flage=request.data.decode()[0]
-    if len(tokens) > 1:return [-1]+tokens
-    elif len(tokens) == 1: 
-        if soft_constaint_flage == '1':
-            similar_tokens=set()
-            lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower())
-            for index,lemme in enumerate(all_lemmes_nouns):
-                if lemme == lemme_token:
-                    similar_tokens.add(index)
-            lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"v")
-            for index,lemme in enumerate(all_lemmes_verbs):
-                if lemme == lemme_token :
-                    similar_tokens.add(index)
-            lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"a")
-            for index,lemme in enumerate(all_lemmes_adjectives):
-                if lemme == lemme_token:
-                    similar_tokens.add(index)
-            lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"r")
-            for index,lemme in enumerate(all_lemmes_adverbs):
-                if lemme == lemme_token:
-                    similar_tokens.add(index)
-            lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"s")
-            for index,lemme in enumerate(all_lemmes_satellites):
-                if lemme == lemme_token:
-                    similar_tokens.add(index)
-            return [-2]+list(similar_tokens)
-        else:
-            return [-3] + tokens
-    else: return [-4]
+    return tokenizer.convert_tokens_to_ids(tokenizer.tokenize(request.data.decode()))
+    # soft_constaint_flage=request.data.decode()[0]
+    # if len(tokens) > 1:return [-1]+tokens
+    # elif len(tokens) == 1: 
+    #     if soft_constaint_flage == '1':
+    #         similar_tokens=set()
+    #         lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower())
+    #         for index,lemme in enumerate(all_lemmes_nouns):
+    #             if lemme == lemme_token:
+    #                 similar_tokens.add(index)
+    #         lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"v")
+    #         for index,lemme in enumerate(all_lemmes_verbs):
+    #             if lemme == lemme_token :
+    #                 similar_tokens.add(index)
+    #         lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"a")
+    #         for index,lemme in enumerate(all_lemmes_adjectives):
+    #             if lemme == lemme_token:
+    #                 similar_tokens.add(index)
+    #         lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"r")
+    #         for index,lemme in enumerate(all_lemmes_adverbs):
+    #             if lemme == lemme_token:
+    #                 similar_tokens.add(index)
+    #         lemme_token= WordNetLemmatizer().lemmatize(tokenizer.decode(tokens).strip().lower(),"s")
+    #         for index,lemme in enumerate(all_lemmes_satellites):
+    #             if lemme == lemme_token:
+    #                 similar_tokens.add(index)
+    #         return [-2]+list(similar_tokens)
+    #     else:
+    #         return [-3] + tokens
+    # else: return [-4]
     
 
 
@@ -343,7 +481,9 @@ def testing():
 
 @app.route('/token', methods=['POST'])
 def next_token():
-    raw_probs = get_next_word_probabilities(request.data.decode())
+    # Vous pouvez lire la température depuis les headers ou utiliser une valeur fixe
+    # Une valeur de 1.2 ou 1.5 forcera beaucoup plus de variété
+    raw_probs = get_next_word_probabilitiesV5(request.data.decode())
 
     return raw_probs
 
@@ -355,7 +495,8 @@ def ping():
 def get_phonemes():
     try:
         text = request.data.decode()
-        phonemes = text_to_phonemes(text, phoneme_separator)
+        listStr = text.split(" ")
+        phonemes = text_to_phonemes(listStr, phoneme_separator)
         return {"text": text, "phonemes": phonemes}
     except Exception as e:
         return {"error": str(e)}, 500

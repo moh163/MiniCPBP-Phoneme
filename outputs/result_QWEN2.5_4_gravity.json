@@ -1,0 +1,9 @@
+{
+  "status" : "ok",
+  "num_iterations" : 1,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a text that explain gravity to a children. Include only the explanation text without any introduction or conclusion..<|im_end|>\n<|im_start|>assistant\n is like the pull that makes things fall down and keeps us on the ground instead of floating away into the sky like a balloon does because it trying to bring everything closer to the",
+    "perplexity" : 1.6608841881519099,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  } ]
+}

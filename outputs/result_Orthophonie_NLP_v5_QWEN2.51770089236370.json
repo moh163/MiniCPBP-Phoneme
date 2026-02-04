@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " foolish fooling sudden silver hammer turning button checking basket reading fishing looking stopping having dancing dressing sticking passing feeding ERROR",
+    "tokens" : [ 23977, 287, 10968, 14961, 23457, 13054, 3137, 13295, 14024, 5290, 19948, 3330, 22535, 3432, 27966, 31523, 36972, 12299, 24991, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, "null, ing,  sudden", "null,  silver", "null,  hammer", "null,  turning", "null,  button", "null,  checking", "null,  basket", "null,  reading", "null,  fishing", "null,  looking", "null,  stopping", "null,  having", "null,  dancing", "null,  dressing", "null,  sticking", "null,  passing", "null,  feeding", null ]
+  }, {
+    "sentence" : "foolish fooling looking follow reading button useful urgent uncle pushing sudden fella goodnight orange nephew wonder sunshine peanut hungry gorgeous.",
+    "tokens" : [ 337, 812, 23977, 287, 3330, 1795, 5290, 3137, 5390, 33671, 37494, 17461, 10968, 282, 6842, 1661, 9287, 18575, 62804, 5775, 51395, 49833, 28956, 23511, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, "null, ing,  looking", "null,  follow", "null,  reading", "null,  button", "null,  useful", "null,  urgent", "null,  uncle", "null,  pushing", "null,  sudden", "null,  f", "null, ella,  good", "null, night,  orange", "null,  nephew", "null,  wonder", "null,  sunshine", "null,  peanut", "null,  hungry", "null,  gorgeous" ]
+  } ],
+  "date" : "2026-02-02T22:27:16.359642900"
+}

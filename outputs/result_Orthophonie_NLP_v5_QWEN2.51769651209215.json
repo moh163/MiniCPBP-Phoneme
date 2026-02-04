@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "moon Earth Saturn comet asteroid planets galaxy stars universe spacesuit jungle.",
+    "tokens" : [ 9009, 9237, 49153, 69986, 54379, 32875, 33161, 9759, 15494, 12621, 3083, 44420, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Earth", "null,  Saturn", "null,  comet", "null,  asteroid", "null,  planets", "null,  galaxy", "null,  stars", "null,  universe", "null,  spaces", "null, uit,  jungle" ]
+  }, {
+    "sentence" : "moon galaxy asteroid planet stars star cluster sun cosmic cloud neb.",
+    "tokens" : [ 9009, 33161, 54379, 11580, 9759, 6774, 10652, 7015, 54701, 9437, 80867, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  galaxy", "null,  asteroid", "null,  planet", "null,  stars", "null,  star", "null,  cluster", "null,  sun", "null,  cosmic", "null,  cloud", "null,  neb" ]
+  } ],
+  "date" : "2026-01-28T20:46:49.134931300"
+}

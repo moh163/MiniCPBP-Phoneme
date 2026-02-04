@@ -1,0 +1,17 @@
+{
+  "status" : "ok",
+  "num_iterations" : 3,
+  "logs" : [ {
+    "sentence" : "<|system|>\nTu es un assistant orthophoniste. Tu génères UNIQUEMENT ce qui est demandé, sans introduction, sans explication, sans conclusion et en français.</s>\n<|user|>\nListe UNIQUEMENT des mots en rapport avec la FERME. Aucune introduction. Aucun mot hors sujet.</s>\n<|assistant|>\n B Co F E R M E T",
+    "perplexity" : 1.98437115127,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nTu es un assistant orthophoniste. Tu génères UNIQUEMENT ce qui est demandé, sans introduction, sans explication, sans conclusion et en français.</s>\n<|user|>\nListe UNIQUEMENT des mots en rapport avec la FERME. Aucune introduction. Aucun mot hors sujet.</s>\n<|assistant|>\n B Co F F F F F F",
+    "perplexity" : 1.843256235163631,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nTu es un assistant orthophoniste. Tu génères UNIQUEMENT ce qui est demandé, sans introduction, sans explication, sans conclusion et en français.</s>\n<|user|>\nListe UNIQUEMENT des mots en rapport avec la FERME. Aucune introduction. Aucun mot hors sujet.</s>\n<|assistant|>\n B Co F F B A F E",
+    "perplexity" : 3.4401681305105054,
+    "details" : "Phoneme: [p] min:4 max:5"
+  } ]
+}

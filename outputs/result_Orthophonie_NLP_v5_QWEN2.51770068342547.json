@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " foolish plenty virus hurry teacher measure poison inside ERROR",
+    "tokens" : [ 11260, 16770, 47235, 11079, 6629, 20476, 4766, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  plenty", "null,  virus", "null,  hurry", "null,  teacher", "null,  measure", "null,  poison", "null,  inside", null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " foolish hurry figure ERROR",
+    "tokens" : [ 47235, 7071, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  hurry", "null,  figure", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-02-02T16:39:02.539400700"
+}

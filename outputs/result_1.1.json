@@ -1,0 +1,10 @@
+{
+  "status" : "ok",
+  "num_iterations" : 1,
+  "logs" : [ {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.</s>\n<|assistant|>\n
+    They saw a giant green tree with beautiful pink and orange flowers",
+    "perplexity" : 5.12088288323539,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  } ]
+}

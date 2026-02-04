@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " luneise ERROR",
+    "tokens" : [ 75, 2886, 1064, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, ise", null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : "lune coque sol plan sol sol martien mou sol pan.",
+    "tokens" : [ 2886, 1062, 591, 2048, 3119, 2048, 2048, 48195, 3591, 53309, 2048, 7215, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  co", "null, que,  sol", "null,  plan", "null,  sol", "null,  sol", "null,  mart", "null, ien,  mou", "null,  sol", "null,  pan" ]
+  }, {
+    "sentence" : "lune coque galaxie coque sol bord cour Rocher cabrioles camp.",
+    "tokens" : [ 2886, 1062, 591, 15369, 706, 645, 1062, 591, 2048, 37902, 2081, 35869, 261, 21516, 461, 7151, 3113, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  co", "null, que,  gal", "null, ax, ie,  co", "null, que,  sol", "null,  bord", "null,  cour", "null,  Roch", "null, er,  cab", "null, ri, oles,  camp" ]
+  } ],
+  "date" : "2026-02-01T18:09:07.091199500"
+}

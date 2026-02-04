@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "star boot unique book confused nurse food fools suck cup.",
+    "tokens" : [ 10459, 4911, 2311, 21815, 28098, 3607, 83642, 18886, 10525, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  boot", "null,  unique", "null,  book", "null,  confused", "null,  nurse", "null,  food", "null,  fools", "null,  suck", "null,  cup" ]
+  }, {
+    "sentence" : "star map pump cup fan sun phone fun bug juice.",
+    "tokens" : [ 2415, 13834, 10525, 8405, 7015, 4540, 2464, 9876, 22815, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  map", "null,  pump", "null,  cup", "null,  fan", "null,  sun", "null,  phone", "null,  fun", "null,  bug", "null,  juice" ]
+  } ],
+  "date" : "2026-02-01T21:20:55.898407800"
+}

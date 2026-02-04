@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " lune galaxie sol vÃ© ERROR",
+    "tokens" : [ 75, 2886, 15369, 706, 645, 2048, 348, 18791, 20043, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  gal", "null, ax, ie,  sol", "null,  vÃ©", null, null, null, null, null, null ]
+  }, {
+    "sentence" : "lune galaxie sol cour Rocher peuple Soleil plan sol ion.",
+    "tokens" : [ 2886, 15369, 706, 645, 2048, 2081, 35869, 261, 1051, 6061, 64515, 321, 3119, 2048, 27672, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  gal", "null, ax, ie,  sol", "null,  cour", "null,  Roch", "null, er,  pe", "null, uple,  Sole", "null, il,  plan", "null,  sol", "null,  ion" ]
+  } ],
+  "date" : "2026-01-30T17:22:51.821328400"
+}

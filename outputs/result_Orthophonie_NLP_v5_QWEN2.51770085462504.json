@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "foolish mother useful thirsty enough button sudden uncle fella object village nephew busy orange summer fellow hammer wonder morning good.",
+    "tokens" : [ 337, 812, 6554, 5390, 97108, 3322, 3137, 10968, 37494, 282, 6842, 1633, 14126, 62804, 13028, 18575, 7324, 12357, 23457, 5775, 6556, 1661, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mother", "null,  useful", "null,  thirsty", "null,  enough", "null,  button", "null,  sudden", "null,  uncle", "null,  f", "null, ella,  object", "null,  village", "null,  nephew", "null,  busy", "null,  orange", "null,  summer", "null,  fellow", "null,  hammer", "null,  wonder", "null,  morning", "null,  good" ]
+  }, {
+    "sentence" : "foolish troubles nephew fella summer fool.",
+    "tokens" : [ 337, 812, 34565, 62804, 282, 6842, 7324, 23977, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  troubles", "null,  nephew", "null,  f", "null, ella,  summer", "null,  fool", null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-02-02T21:24:22.493889100"
+}

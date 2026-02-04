@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " lune sol vert galaxie août Soleil cour sol ERROR",
+    "tokens" : [ 2886, 2048, 5198, 15369, 706, 645, 137228, 64515, 321, 2081, 2048, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  sol", "null,  vert", "null,  gal", "null, ax, ie,  aoÃ»t", "null,  Sole", "null, il,  cour", "null,  sol", null, null ]
+  }, {
+    "sentence" : " lune cour suprême sol coeur campagnes plan sol ERROR",
+    "tokens" : [ 2886, 2081, 1026, 81, 22239, 2048, 1062, 12559, 3113, 3246, 288, 3119, 2048, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  cour", "null,  sup", "null, r, Ãªme,  sol", "null,  co", "null, eur,  camp", "null, agn, es,  plan", "null,  sol", null, null ]
+  } ],
+  "date" : "2026-02-02T12:10:38.473819300"
+}

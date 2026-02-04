@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Fool hard goose juice H ERROR",
+    "tokens" : [ 39, 1062, 1892, 44165, 14709, 388, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  hard", "null,  goose", "null,  juice", "null,  H", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool Island H ERROR",
+    "tokens" : [ 39, 1062, 8451, 388, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Island", "null,  H", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool Ar ERROR",
+    "tokens" : [ 39, 1062, 1780, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Ar", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-22T16:03:49.759822"
+}

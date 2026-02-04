@@ -1,0 +1,17 @@
+{
+  "status" : "ok",
+  "num_iterations" : 3,
+  "logs" : [ {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nList words that are appropriate for children and are related to a farm. Give me directly the list of words without introduction and without making phrases.</s>\n<|assistant|>\n. Animals cow sheep pig goat horse donkey",
+    "perplexity" : 2.131352773413377,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nList words that are appropriate for children and are related to a farm. Give me directly the list of words without introduction and without making phrases.</s>\n<|assistant|>\n. Cow horse donkey pig sheep dog cat",
+    "perplexity" : 3.4230421480427484,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nList words that are appropriate for children and are related to a farm. Give me directly the list of words without introduction and without making phrases.</s>\n<|assistant|>\n. Milk cow horse donkey chickens rabbits sheep",
+    "perplexity" : 3.1039300923543136,
+    "details" : "Phoneme: [p] min:4 max:5"
+  } ]
+}

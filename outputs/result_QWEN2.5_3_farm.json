@@ -1,0 +1,17 @@
+{
+  "status" : "ok",
+  "num_iterations" : 3,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a list of words that are appropriate for children and contains vocabulary related to a farm. Give me directly the list of words without introduction.<|im_end|>\n<|im_start|>assistant\n pig cow goat sheep horse corn apple orange hay wheat",
+    "perplexity" : 11.71244499863179,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a list of words that are appropriate for children and contains vocabulary related to a farm. Give me directly the list of words without introduction.<|im_end|>\n<|im_start|>assistant\n Horse Cow Hen Sheep Chicken Field Barn Gate Corn Hay",
+    "perplexity" : 14.810556894876125,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a list of words that are appropriate for children and contains vocabulary related to a farm. Give me directly the list of words without introduction.<|im_end|>\n<|im_start|>assistant\n chick cow horse pig milk sheep corn hay straw barn",
+    "perplexity" : 20.617815844904708,
+    "details" : "Phoneme: [p] min:4 max:5"
+  } ]
+}

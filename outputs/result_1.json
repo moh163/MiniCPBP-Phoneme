@@ -1,9 +1,0 @@
-{
-  "status" : "ok",
-  "num_iterations" : 1,
-  "logs" : [ {
-    "sentence" : " This the way we do it. A you know we have to make environment",
-    "perplexity" : 9.699625047971155,
-    "tokens" : [ ]
-  } ]
-}

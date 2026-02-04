@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " lune scientifique sol galaxie vue bord territoire observÃ© ERROR",
+    "tokens" : [ 75, 2886, 7182, 51660, 2048, 15369, 706, 645, 47134, 37902, 7170, 6357, 554, 9282, 18791, 20043, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  scient", "null, ifique,  sol", "null,  gal", "null, ax, ie,  vue", "null,  bord", "null,  terr", "null, ito, ire,  observ", "null, Ã©", null ]
+  }, {
+    "sentence" : " lune coque repÃ¨res ERROR",
+    "tokens" : [ 75, 2886, 1062, 591, 2064, 18791, 75005, 416, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  co", "null, que,  rep", "null, Ã¨res", null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-30T17:03:08.819299300"
+}

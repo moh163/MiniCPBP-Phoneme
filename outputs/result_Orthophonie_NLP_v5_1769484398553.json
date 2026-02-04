@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : "Moon rocks Crash land Planet Comes before Man receives Mess down Sun spot Spaces suit Back seat Blast off Extra Ter.",
+    "tokens" : [ 3508, 16419, 7306, 1225, 2659, 29719, 1176, 265, 1078, 3083, 14488, 15551, 1066, 4146, 6308, 2101, 1951, 4176, 8247, 7319, 2071, 505, 745, 33838, 12324, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  rocks", "null,  Cr", "null, ash,  land", "null,  Planet", "null,  Com", "null, es,  before", "null,  Man", "null,  receives", "null,  Mess", "null,  down", "null,  Sun", "null,  spot", "null,  Sp", "null, aces,  suit", "null,  Back", "null,  seat", "null,  Bl", "null, ast,  off", "null,  Extra", "null,  Ter" ]
+  }, {
+    "sentence" : " Moon rocks Pillows Met Planets Under Queens Blast Off Leaves Lights Spaces Blast Logs Light Blastinder ERROR",
+    "tokens" : [ 46, 3508, 16419, 48213, 5811, 6365, 9224, 1507, 6166, 20507, 2071, 505, 5566, 2070, 3465, 44074, 2101, 1951, 2071, 505, 8192, 84, 10315, 2071, 505, 6228, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  rocks", "null,  Pill", "null, ows,  Met", "null,  Plan", "null, ets,  Under", "null,  Queens", "null,  Bl", "null, ast,  Off", "null,  Le", "null, aves,  Lights", "null,  Sp", "null, aces,  Bl", "null, ast,  Log", "null, s,  Light", "null,  Bl", "null, ast, inder", null, null, null, null ]
+  } ],
+  "date" : "2026-01-26T22:26:38.549915500"
+}

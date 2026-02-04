@@ -1,0 +1,29 @@
+{
+  "status" : "ok",
+  "num_iterations" : 6,
+  "logs" : [ {
+    "sentence" : " They the ones that are most important to us. Our family friends our neighbors",
+    "perplexity" : 2.270533111836267,
+    "tokens" : [" m et n 4 fois" ]
+  }, {
+    "sentence" : " This the way it is supposed to be. A you are supposed to environment",
+    "perplexity" : 5.87654744821427,
+    "tokens" : [" m et n 4 fois" ]
+  }, {
+    "sentence" : " We the the the the the the the This is a sentence that is important",
+    "perplexity" : 4.500750935623265,
+    "tokens" : ["t 4 fois" ]
+  }, {
+    "sentence" : " It the The The The The The The The H H H H H ERROR",
+    "perplexity" : 1.2666669127465289,
+    "tokens" : ["t 4 fois" ]
+  }, {
+    "sentence" : " An and the other hand the one that is not and the one that stands",
+    "perplexity" : 6.37844540446126,
+    "tokens" : ["d 4 fois" ]
+  }, {
+    "sentence" : " They the ones that are most important to us. Our family friends our decided",
+    "perplexity" : 5.7868849464892484,
+    "tokens" : [ "d 4 fois"]
+  } ]
+}

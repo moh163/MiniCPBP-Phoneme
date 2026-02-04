@@ -1,0 +1,6 @@
+{
+  "status" : "error",
+  "error_message" : "Index -1 out of bounds for length 0",
+  "exception" : "java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0",
+  "date" : "2026-01-27T17:25:36.470518500"
+}

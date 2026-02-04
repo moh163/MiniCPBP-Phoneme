@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Moon Rock Wonder Planets Sun Spaces Suited Exploring Crew Blast Off Routes Leaps Flying Body Planets System Or Motor Sightank ERROR",
+    "tokens" : [ 46, 3508, 9384, 26733, 9224, 1507, 4146, 2101, 1951, 4137, 959, 14499, 4263, 43158, 2071, 505, 5566, 30852, 265, 2070, 1825, 42027, 18456, 9224, 1507, 4155, 2207, 18521, 322, 429, 1164, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Rock", "null,  Wonder", "null,  Plan", "null, ets,  Sun", "null,  Sp", "null, aces,  Su", "null, ited,  Expl", "null, oring,  Crew", "null,  Bl", "null, ast,  Off", "null,  Rout", "null, es,  Le", "null, aps,  Flying", "null,  Body", "null,  Plan", "null, ets,  System", "null,  Or", "null,  Motor", "null,  S", "null, ight, ank" ]
+  }, {
+    "sentence" : "Moon Rock Halves Sun Planet Man Turtle Shell Spaces Man Tower Lights Sprung Leaves At The Zoo Comfortable Chair Sunset Paint.",
+    "tokens" : [ 3508, 9384, 14449, 1634, 4146, 29719, 3083, 308, 49718, 28707, 2101, 1951, 3083, 20610, 44074, 14474, 1947, 2070, 3465, 2058, 380, 41117, 1176, 4371, 494, 15526, 4146, 1178, 41999, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Rock", "null,  Hal", "null, ves,  Sun", "null,  Planet", "null,  Man", "null,  T", "null, urtle,  Shell", "null,  Sp", "null, aces,  Man", "null,  Tower", "null,  Lights", "null,  Spr", "null, ung,  Le", "null, aves,  At", "null,  The", "null,  Zoo", "null,  Com", "null, fort, able,  Chair", "null,  Sun", "null, set,  Paint" ]
+  } ],
+  "date" : "2026-01-27T14:14:54.594090400"
+}

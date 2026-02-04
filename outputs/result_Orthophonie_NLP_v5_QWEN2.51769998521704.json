@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "sphère inférieure doublée cap associativité plan liberté quant territoire rep.",
+    "tokens" : [ 759, 12068, 4132, 34185, 552, 24576, 2024, 7888, 2062, 4097, 19488, 12815, 3119, 142341, 10272, 7170, 6357, 554, 2064, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, Ã¨re,  inf", "null, Ã©rie, ure,  dou", "null, bl, Ã©e,  cap", "null,  associ", "null, ativ, itÃ©,  plan", "null,  libertÃ©", "null,  quant", "null,  terr", "null, ito, ire,  rep" ]
+  }, {
+    "sentence" : "sphère supérieure plan infernal autrui territoire là haute lieux mou.",
+    "tokens" : [ 759, 12068, 1026, 34185, 552, 3119, 23583, 41978, 3078, 81, 1963, 7170, 6357, 554, 37915, 79998, 10246, 2200, 53309, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, Ã¨re,  sup", "null, Ã©rie, ure,  plan", "null,  infer", "null, nal,  aut", "null, r, ui,  terr", "null, ito, ire,  lÃł", "null,  haute", "null,  lie", "null, ux,  mou" ]
+  } ],
+  "date" : "2026-02-01T21:15:21.701627300"
+}

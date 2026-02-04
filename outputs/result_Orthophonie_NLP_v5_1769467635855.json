@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Fool Light Busy Spend Eagle Honey Crack Fish Drop Paint Island Magic Hutsuts ERROR",
+    "tokens" : [ 39, 1062, 10315, 19523, 90, 2101, 423, 26864, 37101, 7306, 471, 23645, 26829, 41999, 8451, 21577, 388, 14298, 14298, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Light", "null,  Bus", "null, y,  Sp", "null, end,  Eagle", "null,  Honey", "null,  Cr", "null, ack,  Fish", "null,  Drop", "null,  Paint", "null,  Island", "null,  Magic", "null,  H", "null, uts, uts", null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool Bush full of wonders juice juice board glass glass step begin spell ended juice docks juice Hatchuts ERROR",
+    "tokens" : [ 39, 1062, 11301, 2120, 273, 28770, 14709, 14709, 4450, 5253, 5253, 3213, 3135, 15368, 7402, 14709, 277, 4121, 14709, 388, 1506, 14298, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Bush", "null,  full", "null,  of", "null,  wonders", "null,  juice", "null,  juice", "null,  board", "null,  glass", "null,  glass", "null,  step", "null,  begin", "null,  spell", "null,  ended", "null,  juice", "null,  d", "null, ocks,  juice", "null,  H", "null, atch, uts", null, null ]
+  } ],
+  "date" : "2026-01-26T17:47:15.839122500"
+}

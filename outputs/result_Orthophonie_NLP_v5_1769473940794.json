@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Fool waiting room lines Spaces Between Sittingaving ERROR",
+    "tokens" : [ 39, 1062, 6179, 2316, 3104, 2101, 1951, 17842, 322, 2835, 3292, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  waiting", "null,  room", "null,  lines", "null,  Sp", "null, aces,  Between", "null,  S", "null, itting, aving", null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool bee Black wax Island juice Grass Bowl taping Tennis chip Body wax Or Phoned Sadderadder ERROR",
+    "tokens" : [ 39, 1062, 30747, 5418, 22612, 8451, 14709, 33905, 19466, 13341, 272, 12362, 261, 11291, 18456, 22612, 2207, 1777, 11406, 322, 14630, 14630, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  bee", "null,  Black", "null,  wax", "null,  Island", "null,  juice", "null,  Grass", "null,  Bowl", "null,  tap", "null, ing,  Tenn", "null, is,  chip", "null,  Body", "null,  wax", "null,  Or", "null,  Ph", "null, oned,  S", "null, adder, adder", null, null, null, null ]
+  } ],
+  "date" : "2026-01-26T19:32:20.779083600"
+}

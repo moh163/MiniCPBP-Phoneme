@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : "Fool Pink Swallow Spacing Form a Flew Act Fish Porches Under Drag Finishes Line Magic Heart Roots Man Remembers Colors Pink.",
+    "tokens" : [ 1062, 27653, 4235, 8912, 2101, 4234, 7191, 247, 17436, 88, 3162, 23645, 20510, 2706, 6166, 44346, 7198, 6419, 10243, 21577, 15382, 26718, 84, 3083, 6235, 358, 1653, 2065, 641, 27653, 15 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Pink", "null,  Sw", "null, allow,  Sp", "null, acing,  Form", "null,  a", "null,  Fle", "null, w,  Act", "null,  Fish", "null,  Por", "null, ches,  Under", "null,  Drag", "null,  Fin", "null, ishes,  Line", "null,  Magic", "null,  Heart", "null,  Root", "null, s,  Man", "null,  Rem", "null, em, bers,  Col", "null, ors,  Pink" ]
+  }, {
+    "sentence" : " Foolrees ERROR",
+    "tokens" : [ 39, 1062, 6151, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, rees", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-26T20:30:39.607121"
+}

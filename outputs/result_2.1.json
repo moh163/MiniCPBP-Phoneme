@@ -1,0 +1,9 @@
+{
+  "status" : "ok",
+  "num_iterations" : 1,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.<|im_end|>\n<|im_start|>assistant\nThere was once a lion named L in the big beautiful forest",
+    "perplexity" : 5.705325270913977,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  } ]
+}

@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "moon duck foot sick breath desk cup ear horse cousin.",
+    "tokens" : [ 9009, 35985, 4478, 14036, 11486, 18010, 10525, 2430, 15223, 35171, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  duck", "null,  foot", "null,  sick", "null,  breath", "null,  desk", "null,  cup", "null,  ear", "null,  horse", "null,  cousin" ]
+  }, {
+    "sentence" : "moon bat nut coat cup dog cat hat bus pan.",
+    "tokens" : [ 9009, 15743, 9979, 22875, 10525, 5562, 8251, 8896, 5828, 7215, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  bat", "null,  nut", "null,  coat", "null,  cup", "null,  dog", "null,  cat", "null,  hat", "null,  bus", "null,  pan" ]
+  } ],
+  "date" : "2026-01-29T11:29:16.468502500"
+}

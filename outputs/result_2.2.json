@@ -1,0 +1,36 @@
+{
+  "status" : "ok",
+  "num_iterations" : 6,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.<|im_end|>\n<|im_start|>assistant\n
+    These big beautiful butterflies look so pretty in the warm sunshine",
+    "perplexity" : 7.207336152092805,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.<|im_end|>\n<|im_start|>assistant\n
+    A beautiful butterfly danced among the pretty flowers watching over tiny ants in",
+    "perplexity" : 10.548192635388542,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.<|im_end|>\n<|im_start|>assistant\n
+    These pretty pe in the park planted many a small seed",
+    "perplexity" : 5.6086586521657775,
+    "details" : "Phoneme: [p] min:4 max:5"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.<|im_end|>\n<|im_start|>assistant\n
+    I saw a pretty purple dragon fl its many tent and sleep for",
+    "perplexity" : 32.197495460694654,
+    "details" : "Phoneme: [p] min:4 max:5"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.<|im_end|>\n<|im_start|>assistant\n
+    A bird was singing in the big pine tree and its happy ERROR",
+    "perplexity" : 16.13640277963844,
+    "details" : "Phoneme: [b] min:4 max:5
+    ERROR car UNSATISFIABLE"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a sentence that is appropriate for children and contains diverse vocabulary.<|im_end|>\n<|im_start|>assistant\n
+    We spotted beautiful butterflies fl among the pink and purple blo members",
+    "perplexity" : 55.596983851438644,
+    "details" : "Phoneme: [b] min:4 max:5"
+  } ]
+}

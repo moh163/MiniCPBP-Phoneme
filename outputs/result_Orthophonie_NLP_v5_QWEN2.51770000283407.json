@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "lune île altitude cap marin cour supériorité infériorité plan sol.",
+    "tokens" : [ 2886, 14364, 273, 35858, 2062, 89115, 2081, 1026, 963, 3254, 12815, 4132, 963, 3254, 12815, 3119, 2048, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Ã®", "null, le,  altitude", "null,  cap", "null,  marin", "null,  cour", "null,  sup", "null, Ã©, rior, itÃ©,  inf", "null, Ã©, rior, itÃ©,  plan", "null,  sol" ]
+  }, {
+    "sentence" : "lune trompe une galaxie coque sol sol massifs sol mass.",
+    "tokens" : [ 2886, 64536, 375, 6185, 15369, 706, 645, 1062, 591, 2048, 2048, 3072, 21835, 2048, 3072, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  trom", "null, pe,  une", "null,  gal", "null, ax, ie,  co", "null, que,  sol", "null,  sol", "null,  mass", "null, ifs,  sol", "null,  mass" ]
+  } ],
+  "date" : "2026-02-01T21:44:43.393084"
+}

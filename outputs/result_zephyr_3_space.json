@@ -1,0 +1,17 @@
+{
+  "status" : "ok",
+  "num_iterations" : 3,
+  "logs" : [ {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nList words that are appropriate for children and are related to space. Give me directly the list of words without introduction and without making phrases.</s>\n<|assistant|>\n's'  space car airplane bird balloon",
+    "perplexity" : 4.265729567194844,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nList words that are appropriate for children and are related to space. Give me directly the list of words without introduction and without making phrases.</s>\n<|assistant|>\n is space words for kids  kids space",
+    "perplexity" : 1.5162311425843944,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nList words that are appropriate for children and are related to space. Give me directly the list of words without introduction and without making phrases.</s>\n<|assistant|>\n is space words for kids  child space",
+    "perplexity" : 1.6253435384226143,
+    "details" : "Phoneme: [p] min:4 max:5"
+  } ]
+}

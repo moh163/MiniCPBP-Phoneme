@@ -1,0 +1,17 @@
+{
+  "status" : "ok",
+  "num_iterations" : 3,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGive me a list of 20 DIFFERENT unrelated words WITHOUT repetitions. Give me directly the list of words without introduction and do NOT make phrases.<|im_end|>\n<|im_start|>assistant\n balloon moon bird square river fence star bee snake roof eagle leaf flag fish fruit Fifty fruits Fruit roofs Few",
+    "perplexity" : 1770.2430951154777,
+    "details" : "Phoneme: [f, u] min:20"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGive me a list of 20 DIFFERENT unrelated words WITHOUT repetitions. Give me directly the list of words without introduction and do NOT make phrases.<|im_end|>\n<|im_start|>assistant\n moon roof flew fruit zoo flags sniff laughed roofs grew afraid flies juice Can Two Moon lo fear laughs grass",
+    "perplexity" : 874.843189070143,
+    "details" : "Phoneme: [f, u] min:20"
+  }, {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGive me a list of 20 DIFFERENT unrelated words WITHOUT repetitions. Give me directly the list of words without introduction and do NOT make phrases.<|im_end|>\n<|im_start|>assistant\n moon food roof fruit flew fool few wolf cool flow new foot grew mood duck knee tough green might neck",
+    "perplexity" : 651.8176931137326,
+    "details" : "Phoneme: [f, u] min:20"
+  } ]
+}

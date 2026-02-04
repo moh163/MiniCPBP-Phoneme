@@ -1,0 +1,6 @@
+{
+  "status" : "error",
+  "error_message" : "Index 10869 out of bounds for length 10869",
+  "exception" : "java.lang.ArrayIndexOutOfBoundsException: Index 10869 out of bounds for length 10869",
+  "date" : "2026-01-22T16:00:03.805942600"
+}

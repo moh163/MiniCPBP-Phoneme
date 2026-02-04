@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "zephyr",
+  "logs" : [ {
+    "sentence" : " Fool Island Sandy Pe ERROR",
+    "tokens" : [ 39, 1062, 8451, 27504, 3586, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Island", "null,  Sandy", "null,  Pe", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool Bear B ERROR",
+    "tokens" : [ 39, 1062, 25743, 378, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Bear", "null,  B", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " Fool Ar ERROR",
+    "tokens" : [ 39, 1062, 1780, 33246 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  Ar", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-22T16:07:08.434791600"
+}

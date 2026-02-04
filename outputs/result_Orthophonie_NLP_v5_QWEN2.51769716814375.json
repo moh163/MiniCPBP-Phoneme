@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " lune sol vacarme galaxie terrains ourse ion Ã® ERROR",
+    "tokens" : [ 75, 2886, 2048, 9283, 73860, 15369, 706, 645, 7170, 1735, 1039, 325, 27672, 73780, 11909, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  sol", "null,  vac", "null, arme,  gal", "null, ax, ie,  terr", "null, ains,  our", "null, se,  ion", "null,  Ã®", null, null ]
+  }, {
+    "sentence" : " lune vÃ© ERROR",
+    "tokens" : [ 75, 2886, 348, 18791, 20043, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  vÃ©", null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-01-29T15:00:14.370896600"
+}

@@ -43,6 +43,10 @@ public class StateStack<E> {
         stack.add(size.value(), elem);
         size.increment();
     }
+    public E pop() {
+        stack.remove(size.decrement());
+        return size.value()!=0? stack.get(size.value()-1):null;
+    }
 
     public int size() {
         return size.value();

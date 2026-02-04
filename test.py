@@ -3,6 +3,7 @@ from pathlib import Path
 import requests
 import json
 import unicodedata
+from transformers import AutoTokenizer
 
 def test_phonemize(test_words):
     # URL du serveur local
@@ -11,22 +12,22 @@ def test_phonemize(test_words):
     print("Testing phonemize endpoint...")
     print("-" * 50)
 
-    for word in test_words:
-        try:
-            # Envoyer la requête POST
-            response = requests.post(url, data=word)
+    try:
+        payload = " ".join(test_words)
+        # Envoyer la requête POST
+        response = requests.post(url, data=payload.encode('utf-8'))
 
-            # Vérifier si la requête a réussi
-            if response.status_code == 200:
-                result = response.json()
-                print(f"\nInput text: {result['text']}")
-                print(f"Phonemes: {result['phonemes']}")
-            else:
-                print(f"\nError for word '{word}': {response.status_code}")
-                print(response.text)
+        # Vérifier si la requête a réussi
+        if response.status_code == 200:
+            result = response.json()
+            print(f"\nInput text: {result['text']}")
+            print(f"Phonemes: {result['phonemes']}")
+        else:
+            print(f"\nError for word '{test_words}': {response.status_code}")
+            print(response.text)
 
-        except Exception as e:
-            print(f"\nException occurred for word '{word}': {str(e)}")
+    except Exception as e:
+        print(f"\nException occurred for word '{test_words}': {str(e)}")
 
     print("\nTest completed!")
 
@@ -110,20 +111,42 @@ def test_code(codes):
 
     print(results)
 
+def import_tokenizer():
+    tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-3B-Instruct")
+
+    # Exporter le vocabulaire complet
+    vocab = tokenizer.get_vocab()
+    
+    # CORRECTION ICI : ajout de encoding="utf-8"
+    with open("tokenizer_dict_complete.txt", "w", encoding="utf-8") as f:
+        for token, idx in sorted(vocab.items(), key=lambda x: x[1]):
+            # Petite sécurité supplémentaire : on remplace les caractères impossibles à écrire s'il y en a
+            # (bien que utf-8 devrait tout gérer, certains tokens de contrôle peuvent être capricieux)
+            try:
+                f.write(f"{idx}::{token}\n")
+            except Exception as e:
+                print(f"Impossible d'écrire le token ID {idx}: {e}")
+
+    # Trouver le BOS token
+    print(f"BOS token: {tokenizer.bos_token}")
+    print(f"BOS token ID: {tokenizer.bos_token_id}")
+    
 if __name__ == "__main__":
-     # Liste de mots à tester
-    # test_words = [
-    #     "hello",
-    #     "world",
-    #     "test",
-    #     "phoneme",
-    #     "This is a complete sentence.",
-    #     "Multiple words with spaces"
-    # ]
-    test_phonemize(["written"])
+    # Liste de mots à tester
+    test_words = [
+        "hello",
+        "world",
+        "test",
+        "phoneme",
+        "This is a complete sentence.",
+        "Multiple words with spaces"
+    ]
+    result = test_phonemize(["lundi", "parfum"])
+    print(result)
     # phrase = "The is no denying that"
     # for i in range(3):
     #     phrase = test_token(phrase)
     #json = {"ids": [760, 1563, 954, 6495, 13140, 1223, 1293]}
     #test_phonemize_ids(json)
     #test_code([809])
+    #import_tokenizer()

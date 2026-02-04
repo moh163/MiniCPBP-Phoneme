@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " star ERROR",
+    "tokens" : [ 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " star ERROR",
+    "tokens" : [ 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-02-01T21:30:16.244295600"
+}

@@ -1,0 +1,9 @@
+{
+  "status" : "ok",
+  "num_iterations" : 1,
+  "logs" : [ {
+    "sentence" : "<|im_start|>system\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.<|im_end|>\n<|im_start|>user\nGenerate a text that tells a story in 3 phrases appropriate for children. Include only the story text without any introduction or conclusion. Make sure the text is diverse and engaging.<|im_end|>\n<|im_start|>assistant\n upon a tiny island far away lived a curious little slo named Slo but he had a funny name so everyone called him Billy Slo because it was easier to say and remember and Billy",
+    "perplexity" : 2.2914837884335424,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  } ]
+}

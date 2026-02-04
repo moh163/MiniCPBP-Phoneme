@@ -1,0 +1,17 @@
+{
+  "status" : "ok",
+  "num_iterations" : 3,
+  "logs" : [ {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGive me a list of 20 unrelated words without repetitions. Give me directly the list of words without introduction and do NOT make phrases.</s>\n<|assistant|>\n aware afraid branch confused fifty helpful ice laugh find knife laugh mist nurse Often fifteen funny fifteen fifteen frog fifty",
+    "perplexity" : 539.0489429743004,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGive me a list of 20 unrelated words without repetitions. Give me directly the list of words without introduction and do NOT make phrases.</s>\n<|assistant|>\n coffee feather forest fire fox fifteen coffee feather forest fire fox fifteen coffee feather forest fire fox fifteen coffee feather",
+    "perplexity" : 12.550674805360488,
+    "details" : "Phoneme: [m, n] min:4 max:5"
+  }, {
+    "sentence" : "<|system|>\nYou are a speech therapist assistant that generate diverse text complying to certain constraints to help children with speech disability.</s>\n<|user|>\nGive me a list of 20 unrelated words without repetitions. Give me directly the list of words without introduction and do NOT make phrases.</s>\n<|assistant|>\n fifty fifty fifteen fifty fifteen fifteen fifteen fifteen fifteen fifteen fifteen fifteen fifteen fifteen fifteen fifteen fifty fifty ten fifty",
+    "perplexity" : 13.569187282467983,
+    "details" : "Phoneme: [p] min:4 max:5"
+  } ]
+}
