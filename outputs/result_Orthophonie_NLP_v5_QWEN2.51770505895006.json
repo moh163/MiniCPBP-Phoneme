@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "La faune fige peu ces territoires généreux afin.\nLe faune fige le sous territoire ERROR\nLa faune fige le sable ERROR\nUn faune fige le sable ERROR\n",
+    "tokens" : [ 2218, 2886, 4144, 68, 27700, 26652, 7170, 6357, 3861, 45580, 265, 2200, 53301, 624, 2304, 2218, 2886, 4144, 68, 512, 31492, 7170, 6357, 554, 12874, 198, 8747, 2218, 2886, 4144, 68, 512, 274, 480, 12874, 198, 1806, 2218, 2886, 4144, 68, 512, 274, 480, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  fa,  fa,  fa", "null, une,  fig, une,  fig, une,  fig, une,  fig", "null, e,  peu, e,  le, e,  le, e,  le", "null,  ces,  sous,  s,  s", "null,  terr,  terr, able, able", "null, ito, ires,  gÃ©nÃ©, ito, ire", "null, re, ux,  afin" ]
+  }, {
+    "sentence" : "Une faune fige le sable ERROR\nVous faune fige le sable ERROR\nTu faune fige le sable ERROR\nLe faucons fige le sable ERROR\n",
+    "tokens" : [ 2218, 2886, 4144, 68, 512, 274, 480, 12874, 198, 42173, 2218, 2886, 4144, 68, 512, 274, 480, 12874, 198, 52971, 2218, 2886, 4144, 68, 512, 274, 480, 12874, 198, 2304, 2218, 84, 6254, 4144, 68, 512, 274, 480, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  fa,  fa,  fa", "null, une,  fig, une,  fig, une,  fig, u, cons,  fig", "null, e,  le, e,  le, e,  le, e,  le", "null,  s,  s,  s,  s", "null, able, able, able, able", null, null ]
+  } ],
+  "date" : "2026-02-07T18:11:34.998405500"
+}

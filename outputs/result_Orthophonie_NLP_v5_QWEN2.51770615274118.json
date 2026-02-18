@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celle bruine bien dessus fourmis.\nCette taupe solide mange fort.\nCelui bu comme une feuille.\nNous mangé tes boutons fantastiques.\n",
+    "tokens" : [ 6712, 42000, 482, 14370, 20624, 355, 3040, 33865, 624, 86178, 31823, 375, 2048, 577, 59434, 11845, 624, 87616, 1963, 1031, 21572, 6185, 81611, 4517, 624, 65832, 50196, 963, 50209, 24623, 2382, 63879, 8303, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  bru,  tau,  bu,  mang", "null, ine,  bien, pe,  sol,  comme, Ã©,  tes", "null,  dess, ide,  mange,  une,  bout", "null, us,  four,  fort,  feu, ons,  fantast", ".", null, null ]
+  }, {
+    "sentence" : "Celles mangent autrui gronde fermière.\nLa bruine file infernal sud.\nTu courbes las trompette fermée.\nIl mange une bouée fête.\n",
+    "tokens" : [ 36807, 50196, 306, 3078, 81, 1963, 1081, 17231, 80582, 20108, 624, 8747, 42000, 482, 1034, 23583, 41978, 30737, 624, 52971, 2081, 9433, 5141, 64536, 79, 6535, 80582, 7888, 624, 12050, 59434, 6185, 29770, 7888, 140738, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mang,  bru,  cour,  mange", "null, ent,  aut, ine,  file, bes,  las,  une", "null, r, ui,  gr,  infer,  trom,  bou", "null, onde,  ferm, nal,  sud, p, ette,  ferm, Ã©e,  fÃªte", ".", null, null ]
+  } ],
+  "date" : "2026-02-09T00:34:34.109164700"
+}

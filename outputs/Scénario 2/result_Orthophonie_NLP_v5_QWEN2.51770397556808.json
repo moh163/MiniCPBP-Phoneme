@@ -1,0 +1,20 @@
+//Avec contrainte en cpbp
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : 
+    "Tués fous fous champs champs gaz grillent gaz.
+    \nTué fous fous cafétéria cafétéria gazou grillage gaz.
+    \nIls fous fous ERROR
+    \nVous fureur fous ERROR\n",
+    "tokens" : [ 5397, 282, 782, 282, 782, 70481, 70481, 54986, 39058, 306, 54986, 624, 52971, 963, 282, 782, 282, 782, 29103, 38783, 4204, 29103, 38783, 4204, 54986, 283, 39058, 424, 54986, 624, 40, 4730, 282, 782, 282, 782, 12874, 198, 42173, 282, 552, 324, 282, 782, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, Ã©s,  f, Ã©,  f,  f,  f", "null, ous,  f, ous,  f, ous,  f, ure, ur,  f", "null, ous,  champs, ous,  caf, ous, ous", "null,  champs, Ã©tÃ©, ria,  caf", "null,  gaz, Ã©tÃ©, ria,  gaz", "null,  grill, ou,  grill", "null, ent,  gaz, age,  gaz" ]
+  } ],
+  "date" : "2026-02-06T12:05:56.788085900"
+}

@@ -1,0 +1,20 @@
+//Sans cpbp
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : 
+    "Cette façade fantastique façonne la forêt fantastique. ERROR
+    \nCe fou furieux foudre faible.\n
+    Ils font de la peinture.
+    \nIl fait froid dehors fumée sifflement. ERROR\n",
+    "tokens" : [ 94872, 1021, 63879, 2372, 94872, 28952, 1187, 369, 48430, 63879, 2372, 13, 12874, 198, 42170, 56525, 18241, 52719, 282, 2950, 265, 2218, 1238, 624, 40, 4730, 3301, 409, 1187, 1051, 396, 552, 624, 12050, 19694, 282, 1577, 409, 71, 1087, 282, 372, 7888, 274, 3092, 986, 13, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  faÃ§,  fou,  font,  fait", "null, ade,  fantast,  fur,  de,  f", "null, ique,  faÃ§, ieux,  f,  la, roid,  de", "null, onne,  la, oud, re,  fa,  pe, h, ors,  f", "., um, Ã©e,  s", "null, Ãªt,  fantast, iff, lement, .", "null, ique, ." ]
+  } ],
+  "date" : "2026-02-06T12:20:17.820172600"
+}

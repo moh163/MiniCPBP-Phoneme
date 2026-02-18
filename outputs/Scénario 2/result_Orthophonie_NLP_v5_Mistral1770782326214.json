@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "Une fleur fleuris dans le jardin dès l.\nCeux qui ont froid peuvent serrer leur g.\nTu fais un foin magique hier soir à.\nElles flotte le ballon dehors à lire le.\n",
+    "tokens" : [ 7510, 1092, 7510, 1092, 1046, 3190, 1230, 1229, 1256, 1030, 1049, 4549, 1073, 29491, 781, 29511, 29474, 2322, 3793, 8725, 1053, 3706, 13399, 1839, 1036, 1462, 1031, 11209, 1087, 29491, 781, 29506, 29486, 26803, 1289, 1053, 3216, 3129, 2419, 10422, 1347, 1129, 2057, 29491, 781, 29517, 1352, 1042, 1740, 11571, 1230, 5142, 1034, 1108, 29484, 1502, 2057, 1073, 1304, 1230, 29491, 781 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fle,  qui,  fais,  fl", "null, ur,  fle,  ont,  un, otte,  le", "null, ur, is,  dans,  f,  f,  ball", "null,  le, roid,  peu, oin,  mag, on,  de", "null,  j, vent,  s, ique,  hier, h, ors,  à", "null, ard, in,  d, err, er,  leur,  so,  l", "null, ès,  l,  g, ir,  à, ire,  le" ]
+  }, {
+    "sentence" : "Celles et les garçons font fleuris les pet.\nUne feuille délicieuse à manger à déjeuner au.\nElle aime faire du football sans cesse à.\nCette poupées aime fêter fête de Noël chaque.\n",
+    "tokens" : [ 9436, 1679, 2282, 6693, 29625, 1821, 6973, 7510, 1092, 1046, 2282, 6176, 29491, 781, 19581, 1469, 29486, 3225, 3074, 1345, 1180, 2498, 2057, 1058, 4457, 2057, 3074, 2867, 1138, 1031, 3273, 29491, 781, 6541, 1059, 1032, 1313, 16117, 2183, 7337, 12830, 1045, 10660, 2057, 29491, 781, 29511, 3954, 9399, 29488, 5241, 1032, 1313, 1053, 29644, 1128, 1053, 15351, 1108, 2538, 26647, 28192, 29491, 781 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  et,  fe,  a,  pou", "null,  les, u, ille,  dé, ime,  faire, p, ées,  a", "null,  gar, lic, ie, use,  à,  du, ime,  f", "null, ç, ons,  font,  m,  football, ê, ter,  f", "null,  fle, anger,  à,  sans, ête,  de", "null, ur, is,  les,  dé,  c,  No", "null,  pet, je, un, er,  au, esse,  à, ël,  chaque" ]
+  }, {
+    "sentence" : "Un foyer chaud ce soir pour tout le.\nCes friandises sont délicieuses à manger à tout.\nUn fauche ail délicieux à manger du pain.\nCe fauche à lire un livre enchanté à.\n",
+    "tokens" : [ 1053, 1672, 1031, 1252, 6443, 4438, 1347, 1129, 3437, 9234, 1230, 29491, 781, 29511, 1042, 1053, 1141, 1159, 4668, 6265, 3074, 1345, 1180, 7680, 2057, 1058, 4457, 2057, 9234, 29491, 781, 2501, 1053, 1349, 1399, 1032, 1077, 3074, 1345, 23088, 2057, 1058, 4457, 2183, 4126, 29491, 781, 29511, 29474, 1053, 1349, 1399, 2057, 1073, 1304, 1289, 10446, 1035, 1249, 12514, 29565, 2057, 29491, 781 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  f,  f,  f,  f", "null, oy, er,  ch, ri, and, ises,  sont, au, che,  a, au, che,  à", "null, aud,  ce,  dé, il,  dé,  l", "null,  so, lic, ie, uses,  à, lic, ieux,  à, ire,  un", "null, ir,  pour,  m,  m,  liv", "null,  tout, anger,  à, anger,  du, re,  en", "null,  le,  tout,  pain, chant, é,  à" ]
+  } ],
+  "date" : "2026-02-10T22:58:46.212954525"
+}

@@ -1,0 +1,22 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "She finds a friendly birdie singing sweetly in the.\nThere's a friendly frog jumping quicker and higher now.\nI find a friendly balloon quickly in the park.\nThere's a friendly fish swimming quickly in the sea.\n",
+    "tokens" : [ 13165, 1032, 10899, 8495, 1180, 15261, 7989, 1114, 1065, 1040, 29491, 781, 6584, 29510, 29481, 1032, 10899, 8937, 29489, 23826, 3704, 1031, 1072, 5105, 1823, 29491, 781, 29505, 2068, 1032, 10899, 5142, 5741, 5145, 1065, 1040, 5658, 29491, 781, 6584, 29510, 29481, 1032, 10899, 8774, 17630, 5145, 1065, 1040, 6931, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "Those Fish Fancy a Swim Today and You Can.\nA fun fact about elephants is they have a.\nA friendly frog hops quickly through the park during.\nAn elephant finds a friendly snake quickly in the.\n",
+    "tokens" : [ 23552, 1169, 6171, 1032, 4672, 1089, 9552, 1072, 1763, 3186, 29491, 781, 29509, 1514, 2407, 1452, 6707, 1489, 2317, 1117, 1358, 1274, 1032, 29491, 781, 29509, 10899, 8937, 29489, 1063, 3367, 5145, 1827, 1040, 5658, 2706, 29491, 781, 3588, 6707, 18721, 13165, 1032, 10899, 25110, 5145, 1065, 1040, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "We find a friendly bird in the park today.\nShe finds a friendly birdie quickly in the park.\nThe Frog Fell asleep quickly at night time's end.\nThey find fantastic sea creatures quickly in the sea.\n",
+    "tokens" : [ 2068, 1032, 10899, 8495, 1065, 1040, 5658, 3922, 29491, 781, 5621, 13165, 1032, 10899, 8495, 1180, 5145, 1065, 1040, 5658, 29491, 781, 1782, 1169, 10385, 1169, 1247, 15999, 5145, 1206, 2893, 1495, 29510, 29481, 1716, 29491, 781, 6805, 2068, 14530, 6931, 19117, 5145, 1065, 1040, 6931, 29491, 781 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-11T17:56:00.794737640"
+}

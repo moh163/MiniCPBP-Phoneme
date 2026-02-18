@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celles familles ferment trompé imprimer.\nCet après Midi Foret Voyage Franquette Soleil Cro.\nTu feuillette une excellente faire.\nUne foi familiariser doucement généreux herbes douces. ERROR\n",
+    "tokens" : [ 36807, 2091, 30255, 67636, 64536, 128937, 22540, 3134, 624, 34, 295, 41038, 83076, 8207, 83, 95272, 30825, 51706, 64515, 321, 24592, 624, 52971, 1152, 57697, 9809, 6185, 8250, 6817, 19463, 624, 55848, 21679, 11285, 12059, 24576, 66, 1114, 45580, 265, 2200, 1059, 9433, 24576, 1603, 13, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fam,  aprÃ¨s,  fe,  foi", "null, illes,  ferment,  Midi, uil, lette,  une,  familiar", "null,  trom,  Fore,  excell, iser,  dou", "null, pÃ©,  impr, t,  Voyage, ente,  faire, c, ement,  gÃ©nÃ©", "., re, ux,  her", "null, quette,  Sole, bes,  dou", "null, il,  Cro, ces, ." ]
+  }, {
+    "sentence" : "Ceux faire froncé barre chiffre masque.\nElles vont faire feutre tous. ERROR\nElles file après tourner quelque case.\nElles admirera doucement félin amoureux.\n",
+    "tokens" : [ 2200, 19463, 77952, 49984, 3619, 265, 82964, 265, 9243, 591, 624, 6582, 642, 81033, 19463, 1152, 332, 265, 25642, 13, 12874, 198, 6582, 642, 1034, 41038, 7216, 1194, 77971, 1142, 624, 6582, 642, 62598, 2416, 24576, 66, 1114, 57382, 3732, 1079, 79184, 2200, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  faire,  vont,  file,  admir", "null,  fron,  faire,  aprÃ¨s, era,  dou", "null, cÃ©,  bar,  fe,  tour, c, ement,  fÃ©", "null, re,  chiff, ut, re,  tous, ner,  quelque, lin,  am", ".", ".", null ]
+  }, {
+    "sentence" : "La jeune féline file loin.\nCes phrases répondent vivement à tes nouvelles fe.\nCelui file faire le bouton.\nLa tour félin repose figée.\n",
+    "tokens" : [ 35863, 57382, 1056, 1034, 76960, 624, 34, 288, 31747, 74771, 306, 17950, 1114, 3784, 50209, 78980, 1152, 624, 87616, 1963, 1034, 19463, 512, 24623, 263, 624, 8747, 7216, 57382, 3732, 2064, 960, 4144, 7888, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  jeune,  phrases,  file,  tour", "null,  fÃ©,  rÃ©pond,  faire,  fÃ©", "null, line,  file, ent,  viv,  le, lin,  rep", "null,  loin, ement,  Ãł,  bout, ose,  fig", ".", "null,  nouvelles", "null,  fe" ]
+  } ],
+  "date" : "2026-02-08T17:21:29.974954800"
+}

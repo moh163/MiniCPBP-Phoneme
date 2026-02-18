@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 2.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Il pleut des trombones facilement.\nCelui qui joue gagne facilement.\nTu as une imagination fantastique.\nCelles et ceux mangent fort.\n",
+    "tokens" : [ 7100, 332, 939, 64536, 80991, 50694, 478, 624, 87616, 1963, 7774, 26970, 68, 342, 23870, 50694, 478, 624, 52971, 438, 6185, 27799, 63879, 2372, 624, 34, 36807, 1842, 64956, 50196, 306, 11845, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  ple,  qui,  as,  et", "null, ut,  des,  jou,  une,  ceux", "null,  trom, e,  g,  imagination,  mang", "null, bones,  facile, agne,  facile,  fantast, ent,  fort", ".", null, null ]
+  }, {
+    "sentence" : "Tu manges bien les fruits.\nLa chenille devient une fourmi.\nVous avez faim maintenant mange.\nCelle que tu veux fabriquer.\n",
+    "tokens" : [ 296, 5520, 14370, 3541, 25322, 624, 8747, 521, 268, 4517, 3483, 1167, 6185, 3040, 8155, 624, 42173, 46492, 2218, 318, 73599, 59434, 624, 34, 6712, 1709, 9765, 5208, 2200, 9570, 461, 15959, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  m,  ch,  avez,  que", "null, anges,  bien, en, ille,  dev,  fa,  tu", "null,  les, ient,  une, im,  maintenant,  ve", "null,  fruits,  four,  mange, ux,  fab", ".", null, null ]
+  } ],
+  "date" : "2026-02-09T14:00:42.636530100"
+}

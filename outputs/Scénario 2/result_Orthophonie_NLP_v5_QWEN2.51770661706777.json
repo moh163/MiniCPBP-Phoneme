@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 2.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celle dehors filet félicite le chat.\nIls font du feu dans la cour.\nElle fait du feu dans la cheminée.\nElle fait des feuillette dans la cour.\n",
+    "tokens" : [ 6712, 409, 71, 1087, 1034, 83, 57382, 415, 632, 512, 6236, 624, 40, 4730, 3301, 3845, 81611, 6866, 1187, 2081, 624, 6582, 273, 19694, 3845, 81611, 6866, 1187, 87668, 7888, 624, 6582, 273, 19694, 939, 1152, 57697, 9809, 6866, 1187, 2081, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  de,  font,  fait,  fait", "null, h, ors,  file,  du,  du,  des", "null, t,  fÃ©,  feu,  feu,  fe", "null, lic, ite,  le,  dans,  dans, uil, lette,  dans", "null,  chat,  la,  la,  la", ".,  cour,  chemin,  cour", "." ]
+  }, {
+    "sentence" : "Elle fait du feu dans la cheminée.\nNous faisons de la boum à la plage.\nIls font de la peinture à la camp.\nUne panthère folle sifflement grillage.\n",
+    "tokens" : [ 273, 19694, 3845, 81611, 6866, 1187, 87668, 7888, 624, 65832, 2218, 19379, 409, 1187, 29770, 76, 3784, 1187, 85351, 624, 40, 4730, 3301, 409, 1187, 1051, 396, 552, 3784, 1187, 3113, 624, 55848, 7215, 339, 12068, 9443, 273, 274, 3092, 986, 39058, 424, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fait,  fa,  font,  pan", "null,  du, isons,  de,  de, th, Ã¨re,  fol", "null,  feu,  la,  la, le,  s", "null,  dans,  bou,  pe, iff, lement,  grill", ".", "null,  chemin,  la,  la", ".,  plage,  camp" ]
+  } ],
+  "date" : "2026-02-09T13:28:26.768708500"
+}

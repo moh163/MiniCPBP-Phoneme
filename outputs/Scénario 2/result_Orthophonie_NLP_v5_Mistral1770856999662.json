@@ -1,0 +1,22 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "It's time to find a friendly elephant.\nShe finds fun in speaking clearly.\nThis is a fun fact about a monkey named.\nThese Fishy Friends Swim Quickly.\n",
+    "tokens" : [ 29510, 29481, 1495, 1066, 2068, 1032, 10899, 6707, 18721, 29491, 781, 5621, 13165, 1514, 1065, 9479, 7083, 29491, 781, 4028, 1117, 1032, 1514, 2407, 1452, 1032, 2094, 2267, 5928, 29491, 781, 18939, 23552, 29492, 23139, 4672, 1089, 17420, 1114, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "The Fish is floating gently.\nAn elephant fluttered a fan.\nHe finds fun in speaking clearly.\nIt's Fun to Fish on a sunny day.\n",
+    "tokens" : [ 23552, 1117, 16457, 15027, 29491, 781, 3588, 6707, 18721, 1740, 1097, 9076, 1032, 8422, 29491, 781, 3196, 13165, 1514, 1065, 9479, 7083, 29491, 781, 2081, 29510, 29481, 7553, 1066, 23552, 1124, 1032, 5144, 2548, 2138, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "He found a friendly bird.\nThe Fish is Flicking quickly.\nHe finds fun in making new words.\nIt's time to find a friendly elephant.\n",
+    "tokens" : [ 2187, 1032, 10899, 8495, 29491, 781, 1782, 23552, 1117, 1169, 4206, 1056, 5145, 29491, 781, 3196, 13165, 1514, 1065, 3260, 1401, 3853, 29491, 781, 2081, 29510, 29481, 1495, 1066, 2068, 1032, 10899, 6707, 18721, 29491, 781 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-11T19:43:19.660609826"
+}

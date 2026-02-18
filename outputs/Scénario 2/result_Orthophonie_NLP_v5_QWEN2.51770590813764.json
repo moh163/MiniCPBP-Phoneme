@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celui mange une Fourchette parti.\nCet étape fictive efficace vraie.\nLa faune dynamisme peut figée.\nCelles faufiler familles génération général. ERROR\n",
+    "tokens" : [ 1963, 59434, 6185, 13322, 331, 6535, 78888, 624, 34, 295, 141333, 88107, 533, 30814, 578, 33823, 645, 624, 8747, 2218, 2886, 17544, 43518, 24666, 4144, 7888, 624, 34, 36807, 2218, 1704, 5769, 2091, 30255, 45580, 2165, 88075, 13, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mange,  Ã©tape,  fa,  fa", "null,  une,  fict, une,  dynam, uf, iler,  fam", "null,  Four, ive,  effic, isme,  peut, illes,  gÃ©nÃ©", "null, ch, ette,  parti, ace,  vra,  fig, ration,  gÃ©nÃ©ral", "., .", null, null ]
+  }, {
+    "sentence" : "Celui félin file après le panique.\nCeux grimpent là Fanfare ça faire. ERROR\nOn peut faire familles subtropical.\nUne cascade filme français chef.\n",
+    "tokens" : [ 1963, 57382, 3732, 1034, 41038, 512, 7215, 2372, 624, 42170, 2200, 1081, 6664, 306, 37915, 24714, 23051, 37943, 19463, 13, 12874, 198, 1925, 24666, 19463, 2091, 30255, 41029, 50072, 624, 55848, 42018, 41080, 54367, 29706, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fÃ©,  gr,  peut,  cascade", "null, lin,  file, imp, ent,  lÃł,  faire,  filme", "null,  aprÃ¨s,  Fan,  fam,  franÃ§ais", "null,  le, fare,  Ã§a, illes,  subt,  chef", ".", "., .", null ]
+  } ],
+  "date" : "2026-02-08T17:46:53.761415500"
+}

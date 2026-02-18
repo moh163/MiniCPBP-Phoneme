@@ -1,0 +1,15 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Cet enfant fait du sport.\nCelles qui fanfare font froid.\nLe faucons filet féroce fanfare. ERROR\nLa folle fée fabriquait des feuillette. ERROR\n",
+    "tokens" : [ 295, 32532, 517, 19694, 3845, 10552, 624, 34, 36807, 7774, 8405, 23051, 3301, 282, 1577, 624, 2304, 2218, 84, 6254, 1034, 83, 282, 55671, 346, 8405, 23051, 13, 12874, 198, 8747, 9443, 273, 282, 7888, 9570, 461, 446, 1315, 939, 1152, 57697, 9809, 13, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  enf,  qui,  fa,  fol", "null, ant,  fait,  fan, u, cons,  file, le,  f", "null,  du, fare,  font, t,  f, Ã©e,  fab", "null,  sport,  f, Ã©ro, ce,  fan, ri, qu, ait,  des", "., fare, .,  fe", "null, uil, lette, .", null ]
+  } ],
+  "date" : "2026-02-06T17:55:02.889390900"
+}

@@ -28,6 +28,10 @@ public class StateStack<E> {
     private StateInt size;
     private ArrayList<E> stack;
 
+    public ArrayList<E> getStack() {
+        return stack;
+    }
+
     /**
      * Creates a restorable stack.
      * @param sm the state manager that saves/restores the stack

@@ -57,6 +57,43 @@ gc.collect()
 
 mask_string = "<mask>"
 
+@app.route('/generate', methods=['POST'])
+def generate_full_text():
+    try:
+        # Récupérer le prompt depuis la requête
+        data = request.get_json(force=True)
+        prompt = data.get("prompt", "")
+        max_new_tokens = data.get("max_tokens", 512)
+        temperature = data.get("temperature", 0.7)
+
+        # 1. Encodage du texte
+        inputs = tokenizer(prompt, return_tensors="pt").to(device)
+
+        # 2. Utilisation de model.generate pour laisser le LLM créer la suite
+        # Cela gère en interne la boucle de prédiction des tokens
+        with torch.no_grad():
+            output_tokens = model.generate(
+                **inputs,
+                max_new_tokens=max_new_tokens,
+                temperature=temperature,
+                do_sample=True if temperature > 0 else False,
+                pad_token_id=tokenizer.eos_token_id
+            )
+
+        # 3. Décodage du résultat complet
+        full_text = tokenizer.decode(output_tokens[0], skip_special_tokens=True)
+        
+        # Optionnel : ne renvoyer que la partie générée (sans le prompt)
+        generated_only = full_text[len(prompt):]
+
+        return {
+            "full_text": full_text,
+            "generated_text": generated_only
+        }, 200
+
+    except Exception as e:
+        return {"error": str(e)}, 500
+
 def initialize_phonemizer():
     try:
         # Configuration du backend espeak
@@ -205,6 +242,7 @@ def get_next_word_probabilitiesV5(sentence):
             break
         
     print("DEBUG top_token:", repr(top_token), flush=True)
+    print("DEBUG top_token id:", idx, flush=True )
  
     return {
         "prob": list(zip(range(0, len(next_token_candidates_tensor)), all_candidates_probabilities)),
@@ -230,6 +268,13 @@ def decode_id():
         return {"token": token}, 200
     except Exception as e:
         return {"error": str(e)}, 500
+
+# @app.route('/decode_word', methods=['POST'])
+# def decode_word():
+#     try:
+#         data = request.get_data()
+#         tokenizedWord = tokenizer.
+#     except Exception as e:
 
 @app.route('/phonemize_ids', methods=['POST'])
 def phonemize_ids():
@@ -351,12 +396,13 @@ def get_mask_distributions(sentence):
 
 
 try:
-    print("Setting model_name...")
+    
     #model_name = "meta-llama/Llama-3.2-3B"
     #model_name = "../Ctrl-G/ctrlg/gpt2-large_common-gen"
     #model_name ="stabilityai/stablelm-zephyr-3b"
-    model_name = "Qwen/Qwen2.5-3B-Instruct"
-    #model_name = "mistralai/Mistral-7B-Instruct-v0.3"
+    #model_name = "Qwen/Qwen2.5-3B-Instruct"
+    model_name = "mistralai/Mistral-7B-Instruct-v0.3"
+    print(f"Setting model_name to {model_name}")
 
 
     print("Detecting device...")

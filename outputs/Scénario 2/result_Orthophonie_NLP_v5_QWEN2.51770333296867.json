@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "This is for your request.\nIt flies a fire request a bear.\nA fly a fire request a bird.\nHe found a frog in a bird cage.\n",
+    "tokens" : [ 374, 369, 697, 1681, 624, 2132, 37104, 264, 3940, 1681, 264, 11722, 624, 32, 11466, 264, 3940, 1681, 264, 11958, 624, 1519, 1730, 264, 59881, 304, 264, 11958, 35360, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  is,  flies,  fly,  found", "null,  for,  a,  a,  a", "null,  your,  fire,  fire,  frog", "null,  request,  request,  request,  in", ".,  a,  a,  a", "null,  bear,  bird,  bird", ".,  cage" ]
+  }, {
+    "sentence" : "Ate fast a frog in a park.\nIt found a frog in a park.\nHe found a frog in a park.\nShe found a frog in a park.\n",
+    "tokens" : [ 665, 4937, 264, 59881, 304, 264, 6118, 624, 2132, 1730, 264, 59881, 304, 264, 6118, 624, 1519, 1730, 264, 59881, 304, 264, 6118, 624, 7941, 1730, 264, 59881, 304, 264, 6118, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, te,  fast,  found,  found,  found", "null,  a,  a,  a,  a", "null,  frog,  frog,  frog,  frog", "null,  in,  in,  in,  in", "null,  a,  a,  a,  a", "null,  park,  park,  park,  park", "." ]
+  } ],
+  "date" : "2026-02-05T18:14:56.857180500"
+}

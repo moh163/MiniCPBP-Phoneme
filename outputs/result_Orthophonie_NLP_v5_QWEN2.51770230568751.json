@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " fourrure moufette ourson nounours muffins filet moulinvements ERROR",
+    "tokens" : [ 81, 552, 53309, 69, 6535, 1039, 930, 36921, 2471, 54304, 1330, 1034, 83, 53309, 3732, 12477, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mou", "null, f, ette,  our", "null, son,  noun", "null, ours,  muff", "null, ins,  file", "null, t,  mou", "null, lin, vements", null, null, null, null, null, null, null, null, null, null, null, null ]
+  }, {
+    "sentence" : " fourrure tournoiner ERROR",
+    "tokens" : [ 81, 552, 259, 3431, 1961, 261, 12874 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  tour", "null, no, i, ner", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null ]
+  } ],
+  "date" : "2026-02-04T13:42:48.742361600"
+}

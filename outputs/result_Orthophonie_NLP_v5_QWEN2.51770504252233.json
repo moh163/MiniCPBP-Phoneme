@@ -1,0 +1,15 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celles ferment familles chouette têtard refroidie répondant dép.\nOn ferment familles chou têtard ERROR\nCette fée familles chouette têtard ERROR\nCes faveur familles chouette têtard ERROR\n",
+    "tokens" : [ 36807, 67636, 2091, 30255, 521, 283, 6535, 259, 48430, 567, 2053, 1577, 645, 74771, 517, 86785, 624, 1925, 67636, 2091, 30255, 521, 283, 259, 48430, 567, 12874, 198, 86178, 282, 7888, 2091, 30255, 521, 283, 6535, 259, 48430, 567, 12874, 198, 34, 288, 282, 523, 324, 2091, 30255, 521, 283, 6535, 259, 48430, 567, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  ferment,  ferment,  f,  f", "null,  fam,  fam, Ã©e,  fam, ave, ur,  fam", "null, illes,  ch, illes,  ch, illes,  ch, illes,  ch", "null, ou, ette,  t, ou,  t, ou, ette,  t, ou, ette,  t", "null, Ãªt, ard,  ref, Ãªt, ard, Ãªt, ard, Ãªt, ard", "null, roid, ie,  rÃ©pond", "null, ant,  dÃ©p" ]
+  } ],
+  "date" : "2026-02-07T17:44:12.229497500"
+}

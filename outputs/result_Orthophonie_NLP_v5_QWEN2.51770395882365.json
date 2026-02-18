@@ -1,0 +1,15 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Vous fureur folle fantôme fumée fée fée f.\nVous fureur folle fantôme fumée fée fée f.\nVous fureur folle fantôme fumée fée fée f.\nVous fureur folle fantôme fumée fumée fumée f.\n",
+    "tokens" : [ 282, 552, 324, 9443, 273, 8587, 98657, 282, 372, 7888, 282, 7888, 282, 7888, 282, 624, 42173, 282, 552, 324, 9443, 273, 8587, 98657, 282, 372, 7888, 282, 7888, 282, 7888, 282, 624, 42173, 282, 552, 324, 9443, 273, 8587, 98657, 282, 372, 7888, 282, 7888, 282, 7888, 282, 624, 42173, 282, 552, 324, 9443, 273, 8587, 98657, 282, 372, 7888, 282, 372, 7888, 282, 372, 7888, 282, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, "null,  f,  f,  f,  f", "null, Ã©e,  f, Ã©e,  f, Ã©e,  f, um, Ã©e,  f", "null, Ã©e,  f, Ã©e,  f, Ã©e,  f, um, Ã©e,  f" ]
+  } ],
+  "date" : "2026-02-06T11:38:02.349488400"
+}

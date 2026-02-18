@@ -1,0 +1,15 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "On feuillette fébrilement un fascinante fascinante livre.\nOn feuillette fébrilement un fascinante fascinante livre.\nOn feuillette fébrilement un fascinante fascinante livre.\nOn feuillette fébrilement un fascinante fascinante livre.\n",
+    "tokens" : [ 1152, 57697, 9809, 57382, 1323, 457, 478, 650, 15195, 258, 4942, 15195, 258, 4942, 55884, 624, 1925, 1152, 57697, 9809, 57382, 1323, 457, 478, 650, 15195, 258, 4942, 15195, 258, 4942, 55884, 624, 1925, 1152, 57697, 9809, 57382, 1323, 457, 478, 650, 15195, 258, 4942, 15195, 258, 4942, 55884, 624, 1925, 1152, 57697, 9809, 57382, 1323, 457, 478, 650, 15195, 258, 4942, 15195, 258, 4942, 55884, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, null, "null, ante,  livre, ante,  livre, ante,  livre, ante,  livre", "." ]
+  } ],
+  "date" : "2026-02-06T19:10:54.882427100"
+}

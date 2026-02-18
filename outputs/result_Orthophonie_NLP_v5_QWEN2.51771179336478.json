@@ -1,0 +1,14 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "I found beautiful fluffy clouds.\n",
+    "tokens" : [ 1730, 6233, 67561, 29514, 624 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-15T13:15:36.478998"
+}

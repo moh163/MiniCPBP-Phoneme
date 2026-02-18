@@ -1,0 +1,40 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 6,
+  "num_pb" : 3,
+  "weight" : [ 0.5, 0.8 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Vous mangent Bigrement bien facile.\nIls doucement mangent leurs fraises.\nCes petites tortues verts fendille.\nVous vérité griffes bien facile.\n",
+    "tokens" : [ 50196, 306, 6164, 54655, 14370, 50694, 624, 40, 4730, 24576, 66, 1114, 50196, 306, 42053, 6677, 4909, 624, 34, 288, 97285, 16426, 1137, 59414, 94027, 4517, 624, 42173, 44065, 1003, 963, 1081, 3092, 288, 14370, 50694, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mang,  dou,  petites,  vÃ©", "null, ent,  Big, c, ement,  mang,  tort, rit, Ã©,  gr", "null, rement,  bien, ent,  leurs, ues,  verts, iff, es,  bien", "null,  facile,  fra,  fend,  facile", ".", null, null ]
+  }, {
+    "sentence" : "Celui là mangera bien facilement.\nIl caresse doucement la Fourmi.\nLe nounours doux mangeait facilement.\nOn file faire la télévisé.\n",
+    "tokens" : [ 1963, 37915, 50196, 2416, 14370, 50694, 478, 624, 12050, 2162, 21797, 24576, 66, 1114, 1187, 13322, 8155, 624, 2304, 36921, 2471, 24576, 87, 59434, 1315, 50694, 478, 624, 1925, 1034, 19463, 1187, 42016, 2682, 963, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  lÃł,  ca,  noun,  file", "null,  mang, resse,  dou, ours,  dou,  faire", "null, era,  bien, c, ement,  la, x,  mange,  la", "null,  facile,  Four, ait,  facile,  tÃ©lÃ©", ".", null, null ]
+  }, {
+    "sentence" : "Celles qui dorment range fort.\nCelui regarde photos albums familiaux.\nLe catégories courir vient famine.\nUn nounours peux faire peur.\n",
+    "tokens" : [ 36807, 7774, 52303, 478, 2088, 11845, 624, 87616, 1963, 1217, 41341, 7249, 27685, 50947, 2200, 624, 2304, 8251, 18863, 2433, 2081, 404, 85000, 77954, 624, 1806, 36921, 2471, 93197, 19463, 1051, 324, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  qui,  reg,  cat,  noun", "null,  dor, arde,  photos, Ã©g, ories,  cour, ours,  peux", "null, ment,  range,  albums, ir,  vient,  faire", "null,  fort,  familia,  famine,  pe", ".", null, null ]
+  }, {
+    "sentence" : "Elle dessine laine musqués fantastiques.\nTu peux faire ces dessins ça coûte cher.\nCes dames mangent du fruit.\nLe chat noir dort farfadet.\n",
+    "tokens" : [ 273, 20624, 482, 326, 8346, 3091, 446, 5397, 63879, 8303, 624, 52971, 93197, 19463, 26652, 20624, 1330, 37943, 1062, 29772, 665, 22216, 624, 34, 288, 84221, 50196, 306, 3845, 13779, 624, 2304, 6236, 55562, 52434, 3041, 83059, 295, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  dess,  peux,  dames,  chat", "null, ine,  l,  faire,  mang,  noir", "null, aine,  mus,  ces, ent,  du,  dort", "null, qu, Ã©s,  fantast,  dess,  fruit,  far", ".", "null,  co", "null, Ã», te,  cher" ]
+  }, {
+    "sentence" : "Ce chat noir court fort.\nNous mangent de excellente friandise.\nCelles qui veulent peut faire.\nCelui qui mange bien favorise la force.\n",
+    "tokens" : [ 6236, 55562, 5473, 11845, 624, 65832, 50196, 306, 409, 8250, 6817, 2633, 30670, 624, 34, 36807, 7774, 5208, 28480, 24666, 19463, 624, 87616, 1963, 7774, 59434, 14370, 4694, 1064, 1187, 5344, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  chat,  mang,  qui,  qui", "null,  noir, ent,  de,  ve,  mange", "null,  court,  excell, ulent,  peut,  bien", "null,  fort, ente,  fri,  faire,  favor", "., ise,  la", "null,  force", "." ]
+  }, {
+    "sentence" : "Vous mange bien ça facile.\nLe chat fait des griffes.\nVous allez faire une grande peur.\nCes morceaux chaton copie facilement.\n",
+    "tokens" : [ 59434, 14370, 37943, 50694, 624, 2304, 6236, 19694, 939, 1081, 3092, 288, 624, 42173, 12304, 89, 19463, 6185, 24604, 1051, 324, 624, 34, 288, 4313, 346, 11981, 6236, 263, 6162, 645, 50694, 478, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mange,  chat,  alle,  mor", "null,  bien,  fait, z,  faire, ce, aux,  chat", "null,  Ã§a,  des,  une, on,  cop", "null,  facile,  gr,  grande, ie,  facile", ".", ".", null ]
+  } ],
+  "date" : "2026-02-09T17:13:11.010975600"
+}

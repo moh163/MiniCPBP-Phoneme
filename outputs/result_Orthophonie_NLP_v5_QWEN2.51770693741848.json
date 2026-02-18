@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "The funny fox quickly jumps over the lazy.\nWe find fluffy kittens playing.\nThis funny fox quickly runs.\nAn fluffy fox swiftly chased a butterfly.\n",
+    "tokens" : [ 15173, 38835, 6157, 34208, 916, 279, 15678, 624, 1654, 1477, 67561, 82090, 5619, 624, 1986, 15173, 38835, 6157, 8473, 624, 2082, 67561, 38835, 55551, 61820, 264, 55169, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  funny,  find,  funny,  fluffy", "null,  fox,  fluffy,  fox,  fox", "null,  quickly,  kittens,  quickly,  swiftly", "null,  jumps,  playing,  runs,  chased", ".,  a", "null,  the,  butterfly", "." ]
+  }, {
+    "sentence" : "An fluffy frog jumps quickly.\nThere flew a fluffy bunny.\nThe funny fox quickly runs.\nHe found a funny mouse.\n",
+    "tokens" : [ 67561, 59881, 34208, 6157, 624, 3862, 31022, 264, 67561, 75514, 624, 785, 15173, 38835, 6157, 8473, 624, 1519, 1730, 264, 15173, 8644, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fluffy,  flew,  funny,  found", "null,  frog,  a,  fox,  a", "null,  jumps,  fluffy,  quickly,  funny", "null,  quickly,  bunny,  runs,  mouse", ".", null, null ]
+  }, {
+    "sentence" : "That friendly fox quickly chased the butterflies.\nIt flew like a bird.\nThose fluffy kittens play fetch.\nHe found a fluffy bunny.\n",
+    "tokens" : [ 11657, 38835, 6157, 61820, 279, 80676, 624, 2132, 31022, 1075, 264, 11958, 624, 22232, 67561, 82090, 1486, 7807, 624, 1519, 1730, 264, 67561, 75514, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  friendly,  flew,  fluffy,  found", "null,  fox,  like,  kittens,  a", "null,  quickly,  a,  play,  fluffy", "null,  chased,  bird,  fetch,  bunny", ".", "null,  butterflies", "." ]
+  } ],
+  "date" : "2026-02-09T22:22:21.832499500"
+}

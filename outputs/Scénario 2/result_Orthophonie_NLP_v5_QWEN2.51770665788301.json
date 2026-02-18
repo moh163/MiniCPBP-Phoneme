@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 2.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Je vais faire quelque chose.\nCette phrase nôtre fête fée.\nElle fait flotter sa planche.\nJe vais faire quelque chose.\n",
+    "tokens" : [ 90407, 19463, 77971, 14554, 624, 86178, 17133, 308, 9574, 10157, 140738, 282, 7888, 624, 6582, 273, 19694, 1320, 354, 465, 822, 3119, 1528, 624, 29754, 90407, 19463, 77971, 14554, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  vais,  phrase,  fait,  vais", "null,  faire,  n,  fl,  faire", "null,  quelque, Ã´, tre,  fÃªte, ot, ter,  sa,  quelque", "null,  chose,  f,  plan,  chose", ".", null, null ]
+  }, {
+    "sentence" : "Nous faisons de nouvelles amies.\nTu peux faire quelque chose de fantastique.\nCelle qui fouille trouve la fée.\nCette fille fouille dans son sac.\n",
+    "tokens" : [ 2218, 19379, 409, 78980, 1079, 550, 624, 52971, 93197, 19463, 77971, 14554, 409, 63879, 2372, 624, 34, 6712, 7774, 56525, 4517, 70351, 1187, 282, 7888, 624, 86178, 36154, 56525, 4517, 6866, 4438, 11100, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  peux,  qui,  fille", "null, isons,  de,  faire,  fou,  fou", "null,  nouvelles,  quelque, ille,  trouve, ille,  dans", "null,  am,  chose,  la,  son", ".,  de,  f,  sac", ".", "." ]
+  } ],
+  "date" : "2026-02-09T14:36:28.297410100"
+}

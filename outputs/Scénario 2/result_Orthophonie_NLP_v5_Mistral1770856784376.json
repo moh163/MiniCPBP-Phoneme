@@ -1,0 +1,22 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "Il faut faire des exercices de prononcer le mot.\nJe fais exercices de prononcer le mot fable.\nIls font fumer le pouvoir.\nCe foyer est lumineux aujourd'hui.\n",
+    "tokens" : [ 1053, 1996, 16117, 1402, 7303, 1982, 1108, 13472, 1034, 3510, 1230, 3576, 29491, 781, 20253, 26803, 7303, 1982, 1108, 13472, 1034, 3510, 1230, 3576, 1053, 1290, 29491, 781, 29505, 5679, 6973, 1053, 4740, 1230, 9399, 19360, 29491, 781, 29511, 29474, 1053, 1672, 1031, 1702, 18477, 1241, 2322, 3273, 19545, 29483, 29510, 25049, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "Le foyer est propre aujourd'hui.\nUn fauteuil en faux bois.\nNous faisons la fiche dès demain.\nIls font de la fiévreuse reconstruction.\n",
+    "tokens" : [ 1053, 1672, 1031, 1702, 1198, 2547, 3273, 19545, 29483, 29510, 25049, 29491, 781, 2501, 1053, 1996, 16578, 1077, 1249, 1053, 5369, 2127, 1046, 29491, 781, 29527, 1375, 26803, 1821, 1311, 1053, 6448, 1049, 4549, 2261, 1194, 29491, 781, 29505, 5679, 6973, 1108, 1311, 7175, 9275, 1035, 2498, 28187, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "Une fleur fleuris à lenteur.\nIl faut faire de réguliers exercices de prononcent.\nElle fait fiévreuse aujourd'hui chez moi.\nTu fais de la ficelle pour tes exercices.\n",
+    "tokens" : [ 7510, 1092, 7510, 1092, 1046, 2057, 1073, 4407, 1092, 29491, 781, 12124, 1053, 1996, 16117, 1108, 11319, 1121, 4146, 7303, 1982, 1108, 13472, 1034, 2244, 29491, 781, 6541, 1059, 8927, 7175, 9275, 1035, 2498, 3273, 19545, 29483, 29510, 25049, 23208, 4186, 29478, 29491, 781, 29506, 29486, 26803, 1108, 1311, 1053, 1062, 3990, 3437, 1029, 1042, 7303, 1982, 29491, 781 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-11T19:39:44.375577954"
+}

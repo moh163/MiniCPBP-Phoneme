@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Elle fait de la peinture chaque matin.\nTu ferais bien de faire.\nIl fait beau aujourd'hui fuite fuite.\nVous fure ERROR\n",
+    "tokens" : [ 273, 19694, 409, 1187, 1051, 396, 552, 45677, 5517, 258, 624, 52971, 282, 80256, 14370, 409, 19463, 624, 12050, 19694, 70906, 74704, 87153, 282, 9302, 282, 9302, 624, 42173, 282, 552, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fait,  f,  fait,  f", "null,  de, erais,  bien,  beau, ure", "null,  la,  de,  aujourd", "null,  pe,  faire, 'hui,  f", "., uite,  f", ".", "." ]
+  }, {
+    "sentence" : "Cet enfant fait du sport.\nNous faisons des frites froides.\nCette façade fantastique foire souvent.\nJe frotte mes mains froides.\n",
+    "tokens" : [ 295, 32532, 517, 19694, 3845, 10552, 624, 65832, 2218, 19379, 939, 282, 23262, 282, 1577, 288, 624, 86178, 94872, 1021, 63879, 2372, 11756, 554, 70051, 624, 29754, 282, 4640, 665, 10846, 68136, 282, 1577, 288, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  enf,  fa,  faÃ§,  f", "null, ant,  fait, isons,  des, ade,  fantast, rot, te,  mes", "null,  du,  f, ique,  fo,  mains", "null,  sport, rites,  f, ire,  souvent,  f", ".", null, null ]
+  }, {
+    "sentence" : "On feuillette fébrilement un fascinante livre.\nUne façade fantôme façonne fantômes fantastiques.\nTu ferais bien de faire.\nLa fontaine flamme follement sous la pluie.\n",
+    "tokens" : [ 1152, 57697, 9809, 57382, 1323, 457, 478, 650, 15195, 258, 4942, 55884, 624, 55848, 94872, 1021, 8587, 98657, 94872, 28952, 8587, 9574, 8828, 63879, 8303, 624, 52971, 282, 80256, 14370, 409, 19463, 624, 8747, 3301, 8346, 73499, 2660, 9443, 986, 31492, 1187, 625, 84, 645, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fe,  faÃ§,  f,  font", "null, uil, lette,  fÃ©, ade,  fant, erais,  bien, aine,  flam", "null, br, ile, ment,  un, Ã´me,  faÃ§,  de, me,  fol", "null,  fasc, onne,  fant,  faire, lement,  sous", ".,  la", ".,  pl", "." ]
+  } ],
+  "date" : "2026-02-06T22:25:14.242944400"
+}

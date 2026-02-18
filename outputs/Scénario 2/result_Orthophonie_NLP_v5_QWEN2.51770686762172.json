@@ -1,0 +1,30 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 4,
+  "num_pb" : 3,
+  "weight" : [ 1.3, 1.6 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celui qui fouille trouve la boule.\nCelle qui file la plus gagne.\nCet enfant fait très fort.\nIls font flotter le ballon haut.\n",
+    "tokens" : [ 1963, 7774, 56525, 4517, 70351, 1187, 29770, 273, 624, 34, 6712, 7774, 1034, 1187, 5519, 342, 23870, 624, 34, 295, 32532, 517, 19694, 24901, 11845, 624, 40, 4730, 3301, 1320, 354, 465, 512, 4935, 263, 61221, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  qui,  qui,  enf,  font", "null,  fou,  file, ant,  fait,  fl", "null, ille,  trouve,  la,  trÃ¨s, ot, ter,  le", "null,  la,  plus,  fort,  ball", "., on,  haut", ".", null ]
+  }, {
+    "sentence" : "Vous pouvez faire quelque chose dîner.\nCelles et ceux faufiler faire une grappe.\nLe félin faim grandit très vite.\nVous faite de beaux dessins.\n",
+    "tokens" : [ 44266, 19463, 77971, 14554, 294, 24137, 1194, 624, 34, 36807, 1842, 64956, 2218, 1704, 5769, 19463, 6185, 1081, 33431, 624, 2304, 57382, 3732, 2218, 318, 6662, 275, 24901, 82357, 624, 42173, 2218, 632, 409, 387, 11981, 20624, 1330, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  pouvez,  et,  fÃ©,  fa", "null,  faire,  ceux, lin,  fa, ite,  de", "null,  quelque,  fa, im,  grand,  be", "null,  chose, uf, iler,  faire, it,  trÃ¨s, aux,  dess", ".", ".", "." ]
+  }, {
+    "sentence" : "Celle qui file la plus gagne.\nIls font beaucoup de feuilles.\nUne fée faites la magie.\nElles font flotter leur ballon.\n",
+    "tokens" : [ 6712, 7774, 1034, 1187, 5519, 342, 23870, 624, 40, 4730, 3301, 47388, 409, 81611, 30255, 624, 55848, 282, 7888, 19694, 288, 1187, 4878, 645, 624, 6582, 642, 3301, 1320, 354, 465, 27032, 4935, 263, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  qui,  font,  f,  font", "null,  file,  beaucoup, Ã©e,  fait,  fl", "null,  la,  de, es,  la, ot, ter,  leur", "null,  plus,  feu,  mag,  ball", ".", ".", null ]
+  }, {
+    "sentence" : "Une fausse fleur en été.\nCette fille foule la poudre.\nCette fleur fraîchement cueillies est superbe.\nIls font flotter le ballon haut.\n",
+    "tokens" : [ 2218, 355, 325, 12962, 324, 662, 23639, 624, 86178, 36154, 56525, 273, 1187, 281, 2950, 265, 624, 86178, 12962, 324, 6677, 24137, 331, 1114, 49398, 483, 550, 1788, 2256, 1371, 624, 40, 4730, 3301, 1320, 354, 465, 512, 4935, 263, 61221, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  fille,  fle,  font", "null, us, se,  fle,  fou, ur,  fra,  fl", "null, ur,  en, le,  la, Ã®, ch, ement,  cue, ot, ter,  le", "null,  Ã©tÃ©,  p, ill, ies,  est,  ball", ".,  super, on,  haut", ".", null ]
+  } ],
+  "date" : "2026-02-09T20:26:02.166955600"
+}

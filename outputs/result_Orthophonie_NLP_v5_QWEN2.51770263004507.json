@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " The young child plays in the rain.",
+    "tokens" : [ 3908, 1682, 11088, 304, 279, 11174, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  baker,  teacher,  teacher,  young", "null,  won,  gave,  blessed,  child", "null,  the,  the,  the,  plays", "null,  prize,  assignment,  books,  in", ".,  the", "null,  rain", "." ]
+  }, {
+    "sentence" : " The cat sat on the high chair.",
+    "tokens" : [ 8251, 7578, 389, 279, 1550, 10496, 13 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  dog,  cat,  cat,  cat", "null,  b,  p,  drinks,  sat", "null, uster,  toy, atty,  jumped,  milk,  on", "null,  lost,  over,  each,  the", ".,  the,  day,  high", ".,  chair", "." ]
+  } ],
+  "date" : "2026-02-04T22:43:24.502706700"
+}

@@ -1,0 +1,22 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "Vous pouvez manger des fraises sûrement tout de suite.\nElle fait fumer du papier dents aux petits de.\nCet animal aime manger frites dorées de la pou.\nUn fauche tout tôt le fromage de bûcheron dé.\n",
+    "tokens" : [ 1375, 9399, 21418, 1058, 4457, 1402, 7156, 4668, 1036, 29719, 1035, 1234, 9234, 1108, 11746, 29491, 781, 6541, 1059, 8927, 1053, 4740, 2183, 13698, 1517, 1049, 1556, 6440, 6176, 1814, 1108, 29491, 781, 29511, 1067, 9295, 1032, 1313, 1058, 4457, 1053, 1640, 1042, 1049, 1039, 5241, 1108, 1311, 9399, 29491, 781, 2501, 1053, 1349, 1399, 9234, 1029, 15692, 1230, 1245, 1233, 1108, 1055, 29719, 6881, 1034, 3074, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "Ces frites sont délicieuses à manger à dîner tout.\nIls doivent frotte les dents régulièrement dorénavant le so.\nTu fais un fuseaux à lire à tes jou.\nCe four est froid à lire dans mon liv.\n",
+    "tokens" : [ 1053, 1640, 1042, 6265, 3074, 1345, 1180, 7680, 2057, 1058, 4457, 2057, 1049, 29663, 1847, 9234, 29491, 781, 29505, 5679, 1279, 1217, 1076, 1053, 6258, 1192, 2282, 1049, 1556, 11319, 1121, 8878, 1234, 1049, 1039, 3632, 1262, 1208, 1230, 1347, 29491, 781, 29506, 29486, 26803, 1289, 1053, 2498, 5369, 2057, 1073, 1304, 2057, 1029, 1042, 13855, 29491, 781, 29511, 29474, 3076, 1702, 1053, 3706, 2057, 1073, 1304, 3190, 2094, 10446, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "Nous faisons le faisceau de sables de première position.\nVous devez frotte à tout vif le nez de.\nLe renard apeuré sifflement fortement à lundi matin à.\nNous faisons un football à la piscine de l.\n",
+    "tokens" : [ 1375, 26803, 1821, 1230, 26803, 1126, 1349, 1108, 1036, 3329, 1108, 14870, 3608, 29491, 781, 29558, 1375, 1108, 21418, 1053, 6258, 1192, 2057, 9234, 1131, 1103, 1230, 1203, 29532, 1108, 29491, 781, 4282, 7187, 1256, 1032, 1154, 1092, 29565, 1036, 3496, 1812, 6690, 1884, 2057, 1073, 1683, 29478, 2378, 1030, 2057, 29491, 781, 29527, 1375, 26803, 1821, 1289, 7337, 2057, 1311, 1052, 9054, 1241, 1108, 1073, 29491, 781 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-11T17:51:27.808612419"
+}

@@ -1,0 +1,40 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 6,
+  "num_pb" : 3,
+  "weight" : [ 0.1, 1.0, 10.0 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Ce masquer selon planisphère fantastique.\nCeux comme yeux observent fermiers.\nUne assiettes reprenne cet fête.\nLe vertige assise amoureuse faisait gonfler.\n",
+    "tokens" : [ 9243, 15959, 64635, 3119, 285, 759, 12068, 63879, 2372, 624, 42170, 2200, 21572, 19478, 2200, 9282, 306, 80582, 4813, 624, 55848, 1071, 3891, 2338, 2064, 1440, 811, 40967, 140738, 624, 2304, 5198, 7256, 1071, 1064, 1079, 283, 53049, 65417, 1315, 63492, 1489, 261, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mas,  comme,  ass,  vert", "null, quer,  selon,  ye, iet, tes,  rep, ige,  ass", "null,  plan, ux,  observ, ren, ne,  cet, ise,  am", "null, is, ph, Ã¨re,  fantast, ent,  ferm,  fÃªte, ou, reuse,  fais", "., ait,  gon", ".", null ]
+  }, {
+    "sentence" : "Il mangera bien tes freiner.\nCelles commencent doucement autant fleuris.\nCet activité pluton mangerais formidable.\nCe bouge vélos vient funérailles.\n",
+    "tokens" : [ 50196, 2416, 14370, 50209, 3457, 10453, 624, 34, 36807, 1063, 26365, 24576, 66, 1114, 3078, 517, 12962, 324, 285, 624, 34, 295, 4105, 12815, 59487, 263, 50196, 80256, 53729, 624, 42170, 29770, 709, 44065, 2301, 85000, 2464, 13763, 86355, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mang,  comm,  activ,  bou", "null, era,  bien, encent,  dou, itÃ©,  plut, ge,  vÃ©", "null,  tes, c, ement,  aut, on,  mang, los,  vient", "null,  fre, ant,  fle, erais,  formidable,  fun", ".", null, null ]
+  }, {
+    "sentence" : "Ils mangent de bons fruits.\nIls mangent de bons fruits.\nCes oiseaux font du vélo dans larmes.\nLe chat dort sur fondu.\n",
+    "tokens" : [ 4730, 50196, 306, 409, 81034, 25322, 624, 40, 4730, 50196, 306, 409, 81034, 25322, 624, 34, 288, 297, 1064, 11981, 3301, 3845, 44065, 385, 6866, 326, 2178, 288, 624, 2304, 6236, 52434, 1729, 27305, 1054, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mang,  mang,  o,  chat", "null, ent,  de, ent,  de, ise, aux,  font,  dort", "null,  bons,  bons,  du,  sur", "null,  fruits,  fruits,  vÃ©,  fon", ".", "null,  l", "." ]
+  }, {
+    "sentence" : "Ils mangent de bons fruits.\nCes oiseaux font du dessin.\nLe chat doré chatouille facilement.\nUn chat noir joue facilement.\n",
+    "tokens" : [ 4730, 50196, 306, 409, 81034, 25322, 624, 34, 288, 297, 1064, 11981, 3301, 3845, 20624, 258, 624, 2304, 6236, 52303, 963, 6236, 283, 4517, 50694, 478, 624, 1806, 6236, 55562, 26970, 68, 50694, 478, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mang,  o,  chat,  chat", "null, ent,  de, ise, aux,  font,  dor,  noir", "null,  bons,  du, Ã©,  chat,  jou", "null,  fruits,  dess, ou, ille,  facile, e,  facile", ".", null, null ]
+  }, {
+    "sentence" : "Une pomme rougit au feu.\nIl pleut des trombones facilement.\nUne pomme rougit au feu.\nUne pomme rougit au feu.\n",
+    "tokens" : [ 29484, 2660, 28365, 12882, 7906, 81611, 624, 12050, 7100, 332, 939, 64536, 80991, 50694, 478, 624, 55848, 29484, 2660, 28365, 12882, 7906, 81611, 624, 55848, 29484, 2660, 28365, 12882, 7906, 81611, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  pom,  ple,  pom,  pom", "null, me,  rou, ut,  des, me,  rou, me,  rou", "null, git,  au,  trom, git,  au, git,  au", "null,  feu, bones,  facile,  feu,  feu", ".", null, null ]
+  }, {
+    "sentence" : "Ce chat est doux finesse.\nElles jouent dans le fleuve.\nUne pomme rougit au feu.\nLe chat court vite fleur.\n",
+    "tokens" : [ 6236, 1788, 24576, 87, 33918, 325, 624, 6582, 642, 26970, 306, 6866, 512, 12962, 56023, 624, 55848, 29484, 2660, 28365, 12882, 7906, 81611, 624, 2304, 6236, 5473, 82357, 12962, 324, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  chat,  jou,  pom,  chat", "null,  est, ent,  dans, me,  rou,  court", "null,  dou,  le, git,  au,  vite", "null, x,  fines,  fle,  feu,  fle", ".", null, null ]
+  } ],
+  "date" : "2026-02-09T15:32:02.751181300"
+}

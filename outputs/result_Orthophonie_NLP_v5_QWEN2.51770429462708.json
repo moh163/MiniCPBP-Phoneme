@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Elle fait du feu dans la chemin.\nCelui file devant la font.\nIls font de la fige.\nIl file fort la farine.\n",
+    "tokens" : [ 273, 19694, 3845, 81611, 6866, 1187, 87668, 624, 87616, 1963, 1034, 76458, 1187, 3301, 624, 40, 4730, 3301, 409, 1187, 4144, 68, 624, 12050, 1034, 11845, 1187, 3041, 482, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fait,  file,  font,  file", "null,  du,  devant,  de,  fort", "null,  feu,  la,  la,  la", "null,  dans,  font,  fig,  far", ".", "null,  chemin", "." ]
+  }, {
+    "sentence" : "Tu ferais bien de faire.\nUne façade fantôme façonne fantômes fantastiques.\nCe fou furieux foudre fut fâché.\nElle fait de la peinture chaque matin.\n",
+    "tokens" : [ 282, 80256, 14370, 409, 19463, 624, 55848, 94872, 1021, 8587, 98657, 94872, 28952, 8587, 9574, 8828, 63879, 8303, 624, 42170, 56525, 18241, 52719, 282, 2950, 265, 17645, 282, 8835, 74017, 624, 6582, 273, 19694, 409, 1187, 1051, 396, 552, 45677, 5517, 258, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  f,  faÃ§,  fou,  fait", "null, erais,  bien, ade,  fant,  fur,  de", "null,  de, Ã´me,  faÃ§, ieux,  f,  la", "null,  faire, onne,  fant, oud, re,  fut,  pe", "., Ã´, mes,  fantast,  f, int, ure,  chaque", ".,  mat", "." ]
+  }, {
+    "sentence" : "Le fau ERROR\nLa fontaine fumant fantôme frappe.\nCet enfant fait des progrès.\nIl fait beau dehors aujourd'hui.\n",
+    "tokens" : [ 2218, 84, 12874, 198, 8747, 3301, 8346, 282, 372, 517, 8587, 98657, 1422, 33431, 624, 34, 295, 32532, 517, 19694, 939, 462, 901, 12142, 624, 12050, 19694, 70906, 409, 71, 1087, 74704, 87153, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  font,  enf,  fait", "null, u, aine,  f, ant,  fait,  beau", "null, um, ant,  fant,  des,  de", "null, Ã´me,  fr,  pro, h, ors,  aujourd", ".", null, null ]
+  } ],
+  "date" : "2026-02-06T20:57:42.689122800"
+}

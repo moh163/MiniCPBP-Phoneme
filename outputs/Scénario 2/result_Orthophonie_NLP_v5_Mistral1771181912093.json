@@ -1,0 +1,22 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "Tu as faim famine inattendu.\n",
+    "tokens" : [ 1158, 1053, 3139, 2050, 1241, 1065, 1829, 1184, 29486, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "Tu as faim famine inattendu.\n",
+    "tokens" : [ 1158, 1053, 3139, 2050, 1241, 1065, 1829, 1184, 29486, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "Tu as faim famine inattendu.\n",
+    "tokens" : [ 1158, 1053, 3139, 2050, 1241, 1065, 1829, 1184, 29486, 29491, 781 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-15T13:58:32.092000651"
+}

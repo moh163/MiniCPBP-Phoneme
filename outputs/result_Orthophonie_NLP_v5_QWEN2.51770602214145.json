@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.5,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Le félin bien tatou cet panier.\nCelles peuples bienvenus comme courtaude.\nTu peux choisir tes secrets planter une fête.\nCette panthère mange une une peau.\n",
+    "tokens" : [ 57382, 3732, 14370, 71713, 283, 40967, 7215, 1268, 624, 34, 36807, 1051, 28323, 14370, 1037, 355, 21572, 2081, 2565, 793, 624, 52971, 93197, 89094, 50209, 23594, 3119, 465, 6185, 140738, 624, 86178, 7215, 339, 12068, 59434, 6185, 6185, 1051, 2863, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fÃ©,  pe,  peux,  pan", "null, lin,  bien, uples,  bien,  choisir, th, Ã¨re,  mange", "null,  tat, ven, us,  comme,  tes,  une", "null, ou,  cet,  cour,  secrets,  une", ".,  plan,  pe", ".", "null,  fÃªte" ]
+  }, {
+    "sentence" : "Cette mouche picote bien moi.\nIls valent une valeur vraie.\nLa grande bruine comme une trompe.\nCelui courbe mange doucement une courge.\n",
+    "tokens" : [ 53309, 1528, 10319, 1272, 14370, 39991, 624, 40, 4730, 1044, 306, 6185, 50204, 33823, 645, 624, 8747, 24604, 42000, 482, 21572, 6185, 64536, 375, 624, 87616, 1963, 2081, 1371, 59434, 24576, 66, 1114, 6185, 2081, 709, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mou,  val,  grande,  cour", "null, che,  pic, ent,  une,  bru, be,  mange", "null, ote,  bien,  valeur, ine,  comme,  dou", "null,  moi,  vra,  une, c, ement,  une", ".,  trom,  cour", ".", null ]
+  } ],
+  "date" : "2026-02-08T20:56:54.129507"
+}

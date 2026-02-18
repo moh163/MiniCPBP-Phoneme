@@ -1,0 +1,19 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : 
+    "Un faune féroce mange des herbes sombres très.
+    \nOn fau ERROR
+    \nVous faite féroce combat des herbes sombres sous.
+    \nNous faite féroce combat pour ERROR\n",
+    "tokens" : [ 2218, 2886, 282, 55671, 346, 59434, 939, 1059, 9433, 1757, 65, 416, 24901, 624, 1925, 2218, 84, 12874, 198, 42173, 2218, 632, 282, 55671, 346, 12610, 939, 1059, 9433, 1757, 65, 416, 31492, 624, 65832, 2218, 632, 282, 55671, 346, 12610, 4914, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  fa,  fa,  fa", "null, une,  f, u, ite,  f, ite,  f", "null, Ã©ro, ce,  mange, Ã©ro, ce,  combat, Ã©ro, ce,  combat", "null,  des,  des,  pour", "null,  her,  her", "null, bes,  som, bes,  som", "null, b, res,  trÃ¨s, b, res,  sous" ]
+  } ],
+  "date" : "2026-02-07T17:17:39.033924100"
+}

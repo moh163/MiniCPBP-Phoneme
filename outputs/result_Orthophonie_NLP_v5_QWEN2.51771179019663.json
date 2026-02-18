@@ -1,0 +1,14 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Vous fige froid dévouement obsédé.\n",
+    "tokens" : [ 4144, 68, 282, 1577, 7439, 85, 283, 1114, 7448, 15083, 963, 624 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-15T13:10:19.654951300"
+}

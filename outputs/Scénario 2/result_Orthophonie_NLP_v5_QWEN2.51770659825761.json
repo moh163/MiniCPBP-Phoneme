@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 2.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Je file devant la maison.\nJe file vers la fontaine.\nNous faisons de la peinture.\nElles font de la peinture à la camp.\n",
+    "tokens" : [ 1034, 76458, 1187, 46176, 624, 29754, 1034, 5436, 1187, 3301, 8346, 624, 65832, 2218, 19379, 409, 1187, 1051, 396, 552, 624, 6582, 642, 3301, 409, 1187, 1051, 396, 552, 3784, 1187, 3113, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  file,  file,  fa,  font", "null,  devant,  vers, isons,  de,  de", "null,  la,  la,  la,  la", "null,  maison,  font,  pe,  pe", "., int, ure,  Ãł", "null,  la", "null,  camp" ]
+  }, {
+    "sentence" : "Ceux qui font des feuillette.\nLe chat filet de lait frais.\nVous faites de beaux feuillette.\nLa fontaine fait gouttelettes dures.\n",
+    "tokens" : [ 2200, 7774, 3301, 939, 1152, 57697, 9809, 624, 2304, 6236, 1034, 83, 409, 1187, 275, 90553, 624, 42173, 19694, 288, 409, 387, 11981, 1152, 57697, 9809, 624, 8747, 3301, 8346, 19694, 342, 411, 665, 65592, 294, 1413, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  qui,  chat,  fait,  font", "null,  font,  file, es,  de, aine,  fait", "null,  des, t,  de,  be,  g", "null,  fe,  la, aux,  fe, out, te, lettes,  d", ".", ".", null ]
+  } ],
+  "date" : "2026-02-09T12:57:05.750382100"
+}

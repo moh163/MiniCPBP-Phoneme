@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 2.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Those funny papa fox jumped over the lazy.\nThere fella papa laughed fast.\nYou fella papa laughed fast.\nA fella patty fella laughed.\n",
+    "tokens" : [ 15173, 281, 18321, 38835, 26005, 916, 279, 15678, 624, 3862, 282, 6842, 281, 18321, 31527, 4937, 624, 2610, 282, 6842, 281, 18321, 31527, 4937, 624, 32, 282, 6842, 281, 22908, 282, 6842, 31527, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  funny,  f,  f,  f", "null,  p, ella,  p, ella,  p, ella,  p", "null, apa,  fox, apa,  laughed, apa,  laughed, atty,  f", "null,  jumped,  fast,  fast, ella,  laughed", ".", "null,  the", "null,  lazy" ]
+  }, {
+    "sentence" : "You fella patty fella laughed.\nThere fella patty fella laughed.\nIt fella patty fella laughed.\nThe fella patty fella laughed.\n",
+    "tokens" : [ 282, 6842, 281, 22908, 282, 6842, 31527, 624, 3862, 282, 6842, 281, 22908, 282, 6842, 31527, 624, 2132, 282, 6842, 281, 22908, 282, 6842, 31527, 624, 785, 282, 6842, 281, 22908, 282, 6842, 31527, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  f,  f,  f,  f", "null, ella,  p, ella,  p, ella,  p, ella,  p", "null, atty,  f, atty,  f, atty,  f, atty,  f", "null, ella,  laughed, ella,  laughed, ella,  laughed, ella,  laughed", ".", null, null ]
+  } ],
+  "date" : "2026-02-05T17:51:18.028512700"
+}

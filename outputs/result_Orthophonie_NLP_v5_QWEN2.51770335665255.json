@@ -1,0 +1,15 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Tu ferasêtes ERROR\nUne façade fantôme façonne fantastique façade. ERROR\nIl fait beau aujourd'hui fuméeeras ERROR\nVous fureur folle fantôme fuméeoug ERROR\n",
+    "tokens" : [ 282, 9247, 89176, 12874, 198, 55848, 94872, 1021, 8587, 98657, 94872, 28952, 63879, 2372, 94872, 1021, 13, 12874, 198, 12050, 19694, 70906, 74704, 87153, 282, 372, 7888, 9247, 12874, 198, 42173, 282, 552, 324, 9443, 273, 8587, 98657, 282, 372, 7888, 48304, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  f,  faÃ§,  fait,  f", "null, eras, Ãªtes, ade,  fant,  beau, ure, ur,  fol", "null, Ã´me,  faÃ§,  aujourd, le,  fant", "null, onne,  fantast, 'hui,  f, Ã´me,  f", "null, ique,  faÃ§, um, Ã©e, eras, um, Ã©e, oug", "null, ade, .", null ]
+  } ],
+  "date" : "2026-02-05T18:54:25.246716400"
+}

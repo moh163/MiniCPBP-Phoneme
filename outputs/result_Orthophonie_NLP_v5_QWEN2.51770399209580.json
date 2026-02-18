@@ -1,0 +1,15 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Jeudi Fouillé Fouilla Fouiller Fouiller ERROR\nElle ERROR\nElle ERROR\nCeinture  unique ERROR\n",
+    "tokens" : [ 20536, 94210, 139041, 94210, 6241, 94210, 15252, 94210, 15252, 12874, 198, 6582, 273, 12874, 198, 6582, 273, 12874, 198, 42170, 396, 552, 220, 4911, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, udi,  Fou, int, ure,  ", "null, illÃ©,  Fou,  unique", "null, illa,  Fou", "null, iller,  Fou", "null, iller", null, null ]
+  } ],
+  "date" : "2026-02-06T12:33:29.568572900"
+}

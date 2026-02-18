@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 2.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Elles mangent des fraises à la maison.\nElle joue au jeux forestiers.\nElles couraient dans le feuillage.\nCelle chat dort ici fort.\n",
+    "tokens" : [ 642, 50196, 306, 939, 6677, 4909, 3784, 1187, 46176, 624, 6582, 273, 26970, 68, 7906, 69075, 13638, 4813, 624, 6582, 642, 2081, 64, 1167, 6866, 512, 81611, 47064, 624, 34, 6712, 6236, 52434, 48633, 11845, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  mang,  jou,  cour,  chat", "null, ent,  des, e,  au, a, ient,  dans,  dort", "null,  fra,  jeux,  le,  ici", "null, ises,  Ãł,  forest,  feu,  fort", ".", "null,  maison", "." ]
+  }, {
+    "sentence" : "Le chat court vite farceur.\nTu aimes les chats femelles.\nCet ours mange du fromage.\nVous chercher la couronne fraîche.\n",
+    "tokens" : [ 6236, 5473, 82357, 3041, 346, 324, 624, 52971, 264, 1733, 3541, 48526, 4996, 36807, 624, 34, 295, 11350, 59434, 3845, 504, 424, 624, 42173, 22216, 9034, 1187, 2081, 28952, 6677, 24137, 1528, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  chat,  a,  ours,  cher", "null,  court, imes,  les,  mange, cher,  la", "null,  vite,  chats,  du,  cour", "null,  far,  fem,  from, onne,  fra", ".", null, null ]
+  } ],
+  "date" : "2026-02-09T12:18:47.336829600"
+}

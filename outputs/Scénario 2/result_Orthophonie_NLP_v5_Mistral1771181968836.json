@@ -1,0 +1,22 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "Answering feline frequently naps peacefully.\n",
+    "tokens" : [ 2384, 2899, 1053, 5429, 11988, 1075, 2650, 7173, 3839, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "He found a forgotten treasure.\n",
+    "tokens" : [ 2187, 1032, 14420, 26264, 29491, 781 ],
+    "perplexity" : 0.0
+  }, {
+    "sentence" : "I found a fantastic recipe with a lot of.\n",
+    "tokens" : [ 2187, 1032, 14530, 14173, 1163, 1032, 2823, 1070, 29491, 781 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-15T13:59:28.834645247"
+}

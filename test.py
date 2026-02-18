@@ -141,7 +141,7 @@ if __name__ == "__main__":
         "This is a complete sentence.",
         "Multiple words with spaces"
     ]
-    result = test_phonemize(["lundi", "parfum"])
+    result = test_phonemize(["jota","rioja","azulejo"])
     print(result)
     # phrase = "The is no denying that"
     # for i in range(3):

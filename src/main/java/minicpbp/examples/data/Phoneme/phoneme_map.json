@@ -46,6 +46,12 @@
             "ɶ": {"id": 26, "description": "open front rounded"},
             "ɑ": {"id": 27, "description": "open back unrounded"},
             "ɒ": {"id": 28, "description": "open back rounded"}
+        },
+        "nasal": {
+            "ɑ̃": {"id": 79, "description": "nasal open back unrounded"},
+            "ɔ̃": {"id": 80, "description": "nasal open-mid back rounded"},
+            "ɛ̃": {"id": 81, "description": "nasal open-mid front unrounded"},
+            "œ̃": {"id": 82, "description": "nasal open-mid front rounded"}
         }
     },
     "consonants": {
@@ -77,14 +83,16 @@
             "h": {"id": 49, "description": "voiceless glottal fricative"},
             "x": {"id": 50, "description": "voiceless velar fricative"},
             "ɣ": {"id": 51, "description": "voiced velar fricative"},
-            "ç": {"id": 52, "description": "voiceless palatal fricative"}
+            "ç": {"id": 52, "description": "voiceless palatal fricative"},
+            "ʁ": {"id": 84, "description": "voiced uvular fricative"}
         },
         "approximants": {
             "l": {"id": 53, "description": "lateral approximant"},
             "ɹ": {"id": 54, "description": "alveolar approximant"},
             "j": {"id": 55, "description": "palatal approximant"},
             "w": {"id": 56, "description": "labial-velar approximant"},
-            "ɾ": {"id": 57, "description": "alveolar tap/flap"}
+            "ɾ": {"id": 57, "description": "alveolar tap/flap"},
+            "ɥ": {"id": 83, "description": "labial-palatal approximant"}
         },
         "affricates_and_double": {
             "ʧ": {"id": 58, "description": "voiceless postalveolar affricate"},

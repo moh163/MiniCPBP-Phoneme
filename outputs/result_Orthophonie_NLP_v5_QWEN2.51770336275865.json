@@ -1,0 +1,15 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "It flew fast by the fox.\nThey fetch the frog from the forest.\nThe fast fox found a fox.\nShe found a rare bird.\n",
+    "tokens" : [ 31022, 4937, 553, 279, 38835, 624, 6865, 7807, 279, 59881, 504, 279, 13638, 624, 785, 4937, 38835, 1730, 264, 38835, 624, 7941, 1730, 264, 8848, 11958, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  flew,  fetch,  fast,  found", "null,  fast,  the,  fox,  a", "null,  by,  frog,  found,  rare", "null,  the,  from,  a,  bird", ".", ".", "." ]
+  } ],
+  "date" : "2026-02-05T19:04:35.857578300"
+}

@@ -1,0 +1,14 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 1,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "On feuillette fébrilement la page.\n",
+    "tokens" : [ 1152, 57697, 9809, 57382, 1323, 457, 478, 1187, 2150, 624 ],
+    "perplexity" : 0.0
+  } ],
+  "date" : "2026-02-12T14:18:20.725771900"
+}

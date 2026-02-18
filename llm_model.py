@@ -1,6 +1,5 @@
-from transformers import pipeline, AutoModelForCausalLM, AutoModelForMaskedLM, AutoTokenizer
+from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer#, AutoModelForMaskedLM,
 import torch
-import json
 
 def get_predictions(sentence):
     # Encode the sentence using the tokenizer and return the model predictions.

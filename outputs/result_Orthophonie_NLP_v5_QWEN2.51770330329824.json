@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "That fella forgot to laugh.\nThose fella found a pack of terry.\nThose fella found a pack. ERROR\nIt fella found a map.\n",
+    "tokens" : [ 282, 6842, 28595, 311, 12550, 624, 22232, 282, 6842, 1730, 264, 3769, 315, 259, 5400, 624, 22232, 282, 6842, 1730, 264, 3769, 13, 12874, 198, 2132, 282, 6842, 1730, 264, 2415, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  f,  f,  f,  f", "null, ella,  forgot, ella,  found, ella,  found, ella,  found", "null,  to,  a,  a,  a", "null,  laugh,  pack,  pack,  map", ".", "null,  t", "." ]
+  }, {
+    "sentence" : "This fella found a cake.\nAn fella found a map.\nThere fella found a map.\nThe fella found a map.\n",
+    "tokens" : [ 282, 6842, 1730, 264, 19145, 624, 2082, 282, 6842, 1730, 264, 2415, 624, 3862, 282, 6842, 1730, 264, 2415, 624, 785, 282, 6842, 1730, 264, 2415, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  f,  f,  f,  f", "null, ella,  found, ella,  found, ella,  found, ella,  found", "null,  a,  a,  a,  a", "null,  cake,  map,  map,  map", ".", null, null ]
+  } ],
+  "date" : "2026-02-05T17:25:29.804736400"
+}

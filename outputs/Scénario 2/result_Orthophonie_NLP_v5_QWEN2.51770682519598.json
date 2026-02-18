@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : [ 0.8 ],
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Ils faisaient de la sandales.\nIls faisaient amande chez Flore.\nTu peux faire comme moi.\nOn file faire la queue.\n",
+    "tokens" : [ 4730, 2218, 10761, 1167, 409, 1187, 9278, 3831, 624, 40, 4730, 2218, 10761, 1167, 1079, 22925, 45106, 19580, 265, 624, 52971, 93197, 19463, 21572, 39991, 624, 1925, 1034, 19463, 1187, 7177, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  fa,  peux,  file", "null, isa, ient,  de, isa, ient,  am,  faire,  faire", "null,  la, ande,  chez,  comme,  la", "null,  sand,  Flo,  moi,  queue", ".", null, null ]
+  }, {
+    "sentence" : "Elle faim fait peur sans repas.\nIl faut faire comme le mangeoires.\nLa fausse galaxie fabuleux peuplé enfant.\nCe filet assure la naissance.\n",
+    "tokens" : [ 273, 2218, 318, 19694, 1051, 324, 15510, 2064, 300, 624, 12050, 45990, 19463, 21572, 512, 59434, 78, 3861, 624, 8747, 2218, 355, 325, 15369, 706, 645, 9570, 1111, 2200, 1051, 454, 68228, 32532, 517, 624, 42170, 1034, 83, 34915, 1187, 4317, 23965, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  fa,  faut,  fa,  file", "null, im,  fait,  faire, us, se,  gal, t,  assure", "null,  pe,  comme, ax, ie,  fab,  la", "null, ur,  sans,  le, ule, ux,  pe,  na", ".", ".", null ]
+  } ],
+  "date" : "2026-02-09T19:15:19.586950900"
+}

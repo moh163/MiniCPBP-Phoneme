@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\n",
+    "tokens" : [ 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, null, ".", null ]
+  }, {
+    "sentence" : "Celles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\n",
+    "tokens" : [ 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, null, ".", null ]
+  }, {
+    "sentence" : "Celles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\nCelles qui fanfare font leur tourne.\n",
+    "tokens" : [ 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624, 34, 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, null, null, null, null, null, ".", null ]
+  } ],
+  "date" : "2026-02-06T19:32:43.676608"
+}

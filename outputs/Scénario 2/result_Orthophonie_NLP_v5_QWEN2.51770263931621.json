@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 0.8,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : " The frog grabbed flies fast.\n The fast fish fought for food.\n The farmer failed to speak.\n The fox found the fox.\n",
+    "tokens" : [ 59881, 29318, 37104, 4937, 624, 576, 4937, 7640, 20463, 369, 3607, 624, 576, 36400, 4641, 311, 6468, 624, 576, 38835, 1730, 279, 38835, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  frog,  fast,  farmer,  fox", "null,  grabbed,  fish,  failed,  found", "null,  flies,  fought,  to,  the", "null,  fast,  for,  speak,  fox", ".", ".", null ]
+  }, {
+    "sentence" : " The farmer fed many fella fox.\n The fan flew far after a fall.\n The fox finally found proper food.\n The flight asked for breakfast.\n",
+    "tokens" : [ 36400, 22313, 1657, 282, 6842, 38835, 624, 576, 8405, 31022, 3041, 1283, 264, 4399, 624, 576, 38835, 5499, 1730, 6169, 3607, 624, 576, 10971, 4588, 369, 17496, 624 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  farmer,  fan,  fox,  flight", "null,  fed,  flew,  finally,  asked", "null,  many,  far,  found,  for", "null,  f,  after,  proper,  breakfast", ".", ".", "." ]
+  } ],
+  "date" : "2026-02-04T22:58:51.611905400"
+}

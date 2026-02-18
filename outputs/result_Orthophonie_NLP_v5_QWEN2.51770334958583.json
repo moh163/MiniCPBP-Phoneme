@@ -1,0 +1,20 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 2,
+  "num_pb" : 3,
+  "weight" : 5.0,
+  "llm_name" : "QWEN2.5",
+  "logs" : [ {
+    "sentence" : "Celles qui fanfare font leur tourne sans trom.\nIl frotte fanfare ERROR\nTu frotte fanfare ERROR\nCeux frotte fanfare ERROR\n",
+    "tokens" : [ 36807, 7774, 8405, 23051, 3301, 27032, 7216, 811, 15510, 64536, 624, 12050, 282, 4640, 665, 8405, 23051, 12874, 198, 52971, 282, 4640, 665, 8405, 23051, 12874, 198, 42170, 2200, 282, 4640, 665, 8405, 23051, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  qui,  f,  f,  f", "null,  fan, rot, te,  fan, rot, te,  fan, rot, te,  fan", "null, fare,  font, fare, fare, fare", "null,  leur", "null,  tour", "null, ne,  sans", "null,  trom" ]
+  }, {
+    "sentence" : "Ces frotte ERROR\nCette frotte ERROR\nCes frotte ERROR\nCette frotte ERROR\n",
+    "tokens" : [ 288, 282, 4640, 665, 12874, 198, 86178, 282, 4640, 665, 12874, 198, 34, 288, 282, 4640, 665, 12874, 198, 86178, 282, 4640, 665, 12874, 198 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  f,  f,  f,  f", "null, rot, te, rot, te, rot, te, rot, te", null, null, null, null, null ]
+  } ],
+  "date" : "2026-02-05T18:42:38.560370500"
+}

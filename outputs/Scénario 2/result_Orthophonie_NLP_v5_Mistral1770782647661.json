@@ -1,0 +1,25 @@
+{
+  "status" : "ok",
+  "port" : 5000,
+  "num_iterations" : 3,
+  "num_pb" : 3,
+  "weight" : [ 1.6 ],
+  "llm_name" : "Mistral",
+  "logs" : [ {
+    "sentence" : "Icy Fish Frolic Quickly in the stream again.\nAn energetic friend finds a wonderful treasure in.\nHe found a friendly monkey quickly in the.\nA friendly frog hops quickly after a t.\n",
+    "tokens" : [ 3474, 23552, 19528, 1345, 17420, 1114, 1065, 1040, 5222, 1844, 29491, 781, 3588, 29004, 1062, 2600, 13165, 1032, 9358, 26264, 1065, 29491, 781, 3196, 2187, 1032, 10899, 2094, 2267, 5145, 1065, 1040, 29491, 781, 29509, 10899, 8937, 29489, 1063, 3367, 5145, 1792, 1032, 1029, 29491, 781 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, cy,  Fish,  energet,  found,  friendly", "null,  Fro, ic,  friend,  a,  fro", "null, lic,  Quick,  finds,  friendly, g,  h", "null, ly,  in,  a,  mon, ops,  quickly", "null,  the,  wonderful, key,  quickly,  after", "null,  stream,  treasure,  in,  a", "null,  again,  in,  the,  t" ]
+  }, {
+    "sentence" : "They find a friendly elephant quickly in the.\nI found a fantastic monkey named Eddie who.\nHe found a friendly bird in the park.\nAn energetic friend found a beautiful red butter.\n",
+    "tokens" : [ 2068, 1032, 10899, 6707, 18721, 5145, 1065, 1040, 29491, 781, 29505, 2187, 1032, 14530, 2094, 2267, 5928, 20536, 1461, 29491, 781, 3196, 2187, 1032, 10899, 8495, 1065, 1040, 5658, 29491, 781, 3588, 29004, 1062, 2600, 2187, 1032, 5440, 3528, 12256, 29491, 781 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null,  find,  found,  found,  energet", "null,  a,  a,  a, ic,  friend", "null,  friendly,  fantastic,  friendly,  found", "null,  ele,  mon,  bird,  a", "null, phant,  quickly, key,  named,  in,  beautiful", "null,  in,  Eddie,  the,  red", "null,  the,  who,  park,  butter" ]
+  }, {
+    "sentence" : "That's a Fluffy Fish Swimming Quickly in the.\nAntecedent Fishy Frolic with a smile today in.\nThat's a wonderful flower you found in the.\nHe found a friendly snake in the park.\n",
+    "tokens" : [ 29510, 29481, 1032, 3262, 24660, 23552, 4672, 1089, 4850, 17420, 1114, 1065, 1040, 29491, 781, 3588, 1192, 2122, 1076, 23552, 29492, 19528, 1345, 1163, 1032, 7226, 3922, 1065, 29491, 781, 4608, 29510, 29481, 1032, 9358, 15762, 1136, 2187, 1065, 1040, 29491, 781, 3196, 2187, 1032, 10899, 25110, 1065, 1040, 5658, 29491, 781 ],
+    "perplexity" : 0.0,
+    "tokens_used" : [ null, "null, ', s,  a, te, ced, ent,  Fish, ', s,  a,  found", "null,  Fl, y,  Fro,  wonderful,  a", "null, uffy,  Fish, lic,  with,  flower,  friendly", "null,  Sw,  a,  you,  snake", "null, im, ming,  Quick,  smile,  found,  in", "null, ly,  in,  today,  in,  the", "null,  the,  in,  the,  park" ]
+  } ],
+  "date" : "2026-02-10T23:04:07.649959095"
+}
